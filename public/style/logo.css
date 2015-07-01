@@ -1,0 +1,43 @@
+#Login{
+  width:300px;
+  margin:20% auto  0 auto;
+}
+#Login .list{
+  height:40px;
+  line-height:40px;
+  margin-bottom:10px;
+}
+#Login .list input{
+  border:0;
+  height:40px;
+  width:300px;
+  padding: 0 10px;
+}
+#Login .login-header{
+  line-height:40px;
+  font-size:24px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+#Login .login-header .logo{
+  float:left;
+  margin-right:20px;
+  width:40px;
+  height:40px;
+  background:url("../images/logo.png") no-repeat;
+}
+#Login .list .button{
+  width:80px;
+  height:35px;
+  line-height:35px;
+  text-align:center;
+  color:white;
+  margin:0 auto;
+  background: url("../images/button.png") no-repeat;
+  cursor:pointer;
+}
+
+.login-bg-color{
+  background-color: #f2f2f2;
+}
+

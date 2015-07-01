@@ -1,0 +1,20 @@
+extends layout/layout-login
+block content
+    div#Wrapper.login-bg-color
+        div#Login
+            form(method="post" action="/login/verify")
+                div.login-header.list
+                    div.logo
+                    i SuperPort
+                div.list
+                    input(name="user" type="text" placeholder="UserName")
+                div.list
+                    input(name="pass" type="text" placeholder="PassWord")
+                div.list
+                    a Forgot?
+                div.list
+                    div#Submit.button Login
+    script.
+        $("#Submit").click(function(){
+            $("form").submit();
+        })
