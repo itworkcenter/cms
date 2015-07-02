@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var dao = require("../dao");
+var userDao = require("../dao/UsersDao");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -12,9 +12,15 @@ router.post('/verify', function(req, res, next) {
       pass = reqObj.pass;
 
   if(user && pass){
-    console.log(dao)
+
+    userDao.find(function(e,d){
+        res.render('login', { title: 'SuperPort',data:d });
+    })
+
+  }else{
+      res.render('login', { title: 'SuperPort',data:"Null" });
   }
-  res.render('login', { title: 'SuperPort' });
+
 });
 
 module.exports = router;

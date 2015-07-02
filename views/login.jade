@@ -1,6 +1,7 @@
 extends layout/layout-login
 block content
     div#Wrapper.login-bg-color
+        div(style="background-color:f8f8f8")=data
         div#Login
             form(method="post" action="/login/verify")
                 div.login-header.list
