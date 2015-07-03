@@ -12,9 +12,7 @@ router.post('/verify', function(req, res, next) {
       pass = reqObj.pass;
 
   if(user && pass){
-      console.log("find")
     userDao.find(function(e,d){
-        console.log("find"+d)
         res.render('login', { title: 'SuperPort',data:d });
     })
 
