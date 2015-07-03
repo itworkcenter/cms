@@ -1,21 +1,39 @@
 extends layout/layout-login
 block content
     div#Wrapper.login-bg-color
-        div(style="background-color:f8f8f8")=data
         div#Login
-            form(method="post" action="/login/verify")
+            form(method="post" action="")
                 div.login-header.list
                     div.logo
                     i SuperPort
                 div.list
-                    input(name="user" type="text" placeholder="UserName")
+                    input(id="user" name="user" type="text" placeholder="UserName")
                 div.list
-                    input(name="pass" type="text" placeholder="PassWord")
+                    input(id="pass" name="pass" type="password" placeholder="PassWord")
                 div.list
                     a Forgot?
+                    span#notice(style="margin-left:5px;color:red;display:none")
                 div.list
                     div#Submit.button Login
     script.
+        function submint(){
+            var data = { user: $("#user").val(), pass: $("#pass").val() };
+            $("input").val("");
+            $.post("/rest/verify/user", data,
+                    function(d){
+                        if(d){
+                            $("#notice").hide().html("");
+                        }else{
+                            $("#notice").show().html("Username or Password error!");
+                        }
+
+                    });
+        }
         $("#Submit").click(function(){
-            $("form").submit();
-        })
+            submint();
+        });
+        $("body").keyup(function(e){
+           if(e.keyCode==13){
+               submint();
+           }
+        });
