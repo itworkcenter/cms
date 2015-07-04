@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var obj = {};
-obj.connect = require("./db");
+obj.connect = require("./connect").open();
 obj.modelName = "core_user";
 obj.schema = {
     Name: String,
@@ -14,11 +14,12 @@ obj.schema = {
     Mail: String
 };
 obj.model = mongoose.model(obj.modelName, obj.schema);
+
 obj.save = function (json, back) {
     (new this.model(json)).save(back);
 };
-obj.find = function (back) {
-    this.model.find(back)
+obj.findOne = function(json,back){
+    this.model.findOne(json,back);
 };
 
 module.exports = obj;
