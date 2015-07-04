@@ -4,3 +4,12 @@ block content
   h1= title
   p
     a(href="/login") Sign in
+    script.
+      KISSY.ready(function(S){
+        console.log(S);
+        KISSY.use("app/a",function(S,A){
+          console.log(A);
+        })
+      });
+
+
