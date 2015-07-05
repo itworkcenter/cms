@@ -9,6 +9,7 @@ var routes = require('./routes/index');
 var restfuls = require('./routes/restfuls');
 var users = require('./routes/users');
 var login = require('./routes/login');
+var admin = require('./routes/admin/admin');
 
 var app = express();
 
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/login', login);
 app.use('/users', users);
+app.use('/admin', admin);
 
 /*RESTful API*/
 app.use(/rest\/*/, restfuls);

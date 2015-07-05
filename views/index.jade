@@ -1,15 +1,50 @@
 extends layout/layout
 
 block content
-  h1= title
-  p
-    a(href="/login") Sign in
-    script.
-      KISSY.ready(function(S){
-        console.log(S);
-        KISSY.use("app/a",function(S,A){
-          console.log(A);
-        })
-      });
+  div.topIntro
+    div.main
+      h1 Node.js CMS & Web Application Platform
+      p The open source framework for developing database-driven websites, applications and APIs in Node.js. Built on Express and MongoDB.
+      div.button Start
+  div.doc
+    div.main
+      section
+        h2 Get a head-start on the features you need
+        p KeystoneJS is the easiest way to build database-driven websites, applications and APIs in Node.js.
+      section
+        h2 Express.js and MongoDB
+        p Keystone will configure express - the de facto web server for node.js - for you and connect to your MongoDB database using Mongoose, the leading ODM package.
+      section
+        h2 Dynamic Routes
+        p  Keystone starts with best practices for setting up your MV* application, and makes it easy to manage your templates, views and routes.
+      section
+        h2 Database Fields
+        p  IDs, Strings, Booleans, Dates and Numbers are the building blocks of your database. Keystone builds on these with useful, real-world field types like name, email, password, address, image and relationship fields (and more)
+      section
+        h2 Auto-generated Admin UI
+        p  Whether you use it while you're building out your application, or in production as a database content management system, Keystone's Admin UI will save you time and make managing your data easy.
+      section
+        h2 Simpler Code
+        p  Sometimes, async code can get complicated to do simple things. Keystone helps keep simple things - like loading data before displaying it in a view - simple.
+      section
+        h2 Form Processing
+        p  Want to validate a form, upload an image, and update your database with a single line? Keystone can do that, based on the data models you've already defined.
+      section
+        h2 Session Management
+        p  Keystone comes ready out of the box with session management and authentication features, including automatic encryption for password fields.
+      section
+        h2 Email Sending
+        p  Keystone makes it easy to set up, preview and send template-based emails for your application. It also integrates with Mandrill (Mailchimp's excellent transaction email sending service)
+      section
+        h2 Managed Updates
+        p  Keystone includes an optional updates framework, that can take care of running update scripts for you, making it easy to transition from development to production.
+
+  script.
+    KISSY.ready(function (S) {
+      console.log(S);
+      KISSY.use("app/a", function (S, A) {
+        console.log(A);
+      })
+    });
 
 

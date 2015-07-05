@@ -22,7 +22,7 @@ block content
             $.post("/rest/verify/user", data,
                     function(d){
                         if(d){
-                            $("#notice").hide().html("");
+                            location.href = "/admin";
                         }else{
                             $("#notice").show().html("Username or Password error!");
                         }
