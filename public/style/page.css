@@ -34,7 +34,9 @@ body {
     height: 40px;
     width: 40px;
     margin-top: 5px;
-    background: url("../images/logo.png") no-repeat;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position:-40px 0px;
 }
 
 #Header #Nav ul li {
