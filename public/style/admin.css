@@ -32,9 +32,17 @@
     float: left;
     line-height: 50px;
     color: white;
-    margin: 0 5px;
+    margin: 0 10px;
 }
-
+#Header #Nav ul li i{
+    display:inline-block;
+    width:5px;
+    height:9px;
+    margin-left:5px;
+    background-image: url("../images/icons.png");
+    background-repeat: no-repeat;
+    background-position:0px 0px;
+}
 #Header #Nav ul li a {
     color: white;
     font-weight: bold;

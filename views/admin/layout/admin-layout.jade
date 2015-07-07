@@ -10,6 +10,8 @@ html
         link(rel='stylesheet', href='/style/style.css')
         link(rel='stylesheet', href='/style/base.css')
         link(rel='stylesheet', href='/style/admin.css')
+        block styles
+        block scripts
         // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
         // WARNING: Respond.js doesn't work if you view the page via file://
         //if lt IE 9
@@ -22,22 +24,8 @@ html
         script(src="/js/seed.js")
     body
         div#Wrapper
-            div#Header
-                div#Logo.one
-                div#Nav.one
-                    ul
-                        li
-                            a(href="/admin") System
-                        li
-                            a(href="/admin") Project
-                        li
-                            a(href="/admin") Module
-                        li
-                            a(href="/admin") Set
-                div#Set.one.lay-right
-                    div.info
-            div#Content
+            include admin-layout-header
 
-            div#Footer
-                p SuperPort release
-        block content
+            block content
+
+            include admin-layout-footer
