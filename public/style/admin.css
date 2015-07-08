@@ -5,12 +5,14 @@
 .lay-right {
     float: right;
 }
-
+.main{
+    margin:0 10px;
+}
 #Header {
+
     width: 100%;
-    padding: 0 20px;
-    height: 50px;
-    line-height: 50px;
+    height: 40px;
+    line-height: 40px;
     background-color: #336699;
 }
 
@@ -20,17 +22,19 @@
 }
 
 #Header #Logo {
-    width: 40px;
-    height: 40px;
-    margin-top: 5px;
+    width: 25px;
+    height: 25px;
+    margin-top: 7px;
     background-image: url("../images/logo.png");
     background-repeat: no-repeat;
-    background-position:-40px 0px;
+    background-position:-25px 0px;
 }
-
+#Header #Nav{
+    width:70%;
+}
 #Header #Nav ul li {
     float: left;
-    line-height: 50px;
+    line-height: 40px;
     color: white;
     margin: 0 10px;
 }
@@ -46,5 +50,25 @@
 #Header #Nav ul li a {
     color: white;
     font-weight: bold;
+}
+#Header #Set{
+    position:absolute;
+    top:0;
+    right:0;
+    height:40px;
+}
+#Header #Set div{
+    line-height:40px;
+    float:right;
+    color:#a2fe01;
+}
+#Header #Set .setting{
+    width:20px;
+    height:20px;
+    margin-top:10px;
+    margin-left:5px;
+    background-image:url("../images/icons.png");
+    background-repeat: no-repeat;
+    background-position:0px -9px;
 }
 

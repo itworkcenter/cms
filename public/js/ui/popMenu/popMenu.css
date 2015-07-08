@@ -1,0 +1,17 @@
+.pop-menu{
+    display:none;
+    position:absolute;
+    top:-10000px;
+
+    padding:0 5px;
+    text-align:left;
+    background-color:#3f7ebe;
+}
+.pop-menu div{
+    line-height:30px;
+}
+.pop-menu .pop-menu-opt{
+    min-width:60px;
+    cursor:pointer;
+    text-align:left;
+}
