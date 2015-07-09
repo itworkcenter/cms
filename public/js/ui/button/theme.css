@@ -1,0 +1,13 @@
+.green {
+    color: #69aa46!important;
+}
+.header {
+    line-height: 28px;
+    margin-bottom: 16px;
+    margin-top: 18px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #CCC;
+}
+.header.green {
+    border-bottom-color: #cce2c1;
+}
