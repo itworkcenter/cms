@@ -5,7 +5,25 @@ block content
     div#Content
         div.main
         script.
-            $(function(){
+            KISSY.ready(function (S) {
+                S.use("popMenu", function (S, J) {
+                    $("#Set").popMenu({
+                        data: [
+                            "Profile",
+                            "Setting",
+                            "Log out"
+                        ]
+                    });
+                    $("#Nav ul li").popMenu({
+                        data: [
+                            "dfsfsdfsdfsdfsdfsdf",
+                            "Setting",
+                            "Log outsfsfdsf"
+                        ]
+                    })
+                })
+            });
+            /*$(function(){
                 $("#Set").popMenu({
                     data:[
                         "Profile",
@@ -20,6 +38,6 @@ block content
                         "Log outsfsfdsf"
                     ]
                 })
-            })
+             })*/
 
 
