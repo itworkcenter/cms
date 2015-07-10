@@ -1,16 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d933988-d642-4945-8653-b9ab4805149e" name="Default" comment="add home page ,admin page">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ui/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/seed-config.js" />
+    <list default="true" id="4d933988-d642-4945-8653-b9ab4805149e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/modules/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/modules/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/modules/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/modules/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/libs/angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/modules/bootstrap/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/modules/bootstrap/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/modules/bootstrap/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/modules/bootstrap/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/modules/fonts/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/modules/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/modules/bootstrap/html5shiv.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/modules/popMenu/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/libs/jquery-1.8.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/libs/lazyload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/modules/link.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/modules/bootstrap/js/npm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/require.main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/modules/bootstrap/respond.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/modules/signin/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/libs/swiper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/modules/text.js" />
+      <change type="DELETED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\app\a.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\seed-config.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\seed.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\bootstrap\html5shiv.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\bootstrap\respond.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\fonts\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\jquery.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/admin-index.jade" afterPath="$PROJECT_DIR$/views/admin/admin-index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/layout/admin-layout-header.jade" afterPath="$PROJECT_DIR$/views/admin/layout/admin-layout-header.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/layout/admin-layout.jade" afterPath="$PROJECT_DIR$/views/admin/layout/admin-layout.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/ui/popMenu/popMenu.js" afterPath="$PROJECT_DIR$/public/js/ui/popMenu/popMenu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.jade" afterPath="$PROJECT_DIR$/views/index.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout/layout-login.jade" afterPath="$PROJECT_DIR$/views/layout/layout-login.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout/layout.jade" afterPath="$PROJECT_DIR$/views/layout/layout.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\0PROJECT\CMS\public\js\ui\common.js" afterPath="$PROJECT_DIR$/public/js/ui/include.js" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\lib\html5shiv.js" afterPath="$PROJECT_DIR$/public/js/libs/html5shiv.js" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\lib\jquery-1.8.0.js" afterPath="$PROJECT_DIR$/public/js/libs/jquery.1.8.0.js" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\lib\respond.js" afterPath="$PROJECT_DIR$/public/js/libs/respond.js" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\lib\underscore.js" afterPath="$PROJECT_DIR$/public/js/libs/underscore.js" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\base.css" afterPath="$PROJECT_DIR$/public/js/modules/base.css" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\bootstrap\bootstrap-theme.css" afterPath="$PROJECT_DIR$/public/js/modules/bootstrap/css/bootstrap-theme.css" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\bootstrap\bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/public/js/modules/bootstrap/css/bootstrap-theme.min.css" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\bootstrap\bootstrap.css" afterPath="$PROJECT_DIR$/public/js/modules/bootstrap/css/bootstrap.css" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\bootstrap\bootstrap.min.css" afterPath="$PROJECT_DIR$/public/js/modules/bootstrap/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\bootstrap\ie-emulation-modes-warning.js" afterPath="$PROJECT_DIR$/public/js/modules/bootstrap/ie-emulation-modes-warning.js" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\bootstrap\ie8-responsive-file-warning.js" afterPath="$PROJECT_DIR$/public/js/modules/bootstrap/ie8-responsive-file-warning.js" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\button\bootstrap-theme.css" afterPath="$PROJECT_DIR$/public/js/modules/button/bootstrap-theme.css" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\button\bootstrap.css" afterPath="$PROJECT_DIR$/public/js/modules/button/bootstrap.css" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\button\button-theme.css" afterPath="$PROJECT_DIR$/public/js/modules/button/button-theme.css" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\button\button.css" afterPath="$PROJECT_DIR$/public/js/modules/button/button.css" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\button\index.html" afterPath="$PROJECT_DIR$/public/js/modules/button/index.html" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\button\script.js" afterPath="$PROJECT_DIR$/public/js/modules/button/script.js" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\button\theme.css" afterPath="$PROJECT_DIR$/public/js/modules/button/theme.css" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\fonts\FontAwesome.otf" afterPath="$PROJECT_DIR$/public/js/modules/fonts/FontAwesome.otf" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\fonts\font-awesome.css" afterPath="$PROJECT_DIR$/public/js/modules/fonts/font-awesome.css" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\fonts\fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/public/js/modules/fonts/fontawesome-webfont.eot" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\fonts\fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/public/js/modules/fonts/fontawesome-webfont.svg" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\fonts\fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/public/js/modules/fonts/fontawesome-webfont.ttf" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\fonts\fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/public/js/modules/fonts/fontawesome-webfont.woff" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\fonts\fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/public/js/modules/fonts/fontawesome-webfont.woff2" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\fonts\index.html" afterPath="$PROJECT_DIR$/public/js/modules/fonts/index.html" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\include.js" afterPath="$PROJECT_DIR$/public/js/modules/css.js" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\popMenu\popMenu.css" afterPath="$PROJECT_DIR$/public/js/modules/popMenu/style.css" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\popMenu\popMenu.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\popMenu\popMenu.js" afterPath="$PROJECT_DIR$/public/js/modules/popMenu/main.js" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\signin\index.html" afterPath="$PROJECT_DIR$/public/js/modules/signin/index.html" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\signin\script.js" afterPath="$PROJECT_DIR$/public/js/modules/signin/script.js" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\js\ui\signin\style.css" afterPath="$PROJECT_DIR$/public/js/apps/main.js" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\style\admin.css" afterPath="$PROJECT_DIR$/public/styles/admin.css" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\style\base.css" afterPath="$PROJECT_DIR$/public/styles/base.css" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\style\login.css" afterPath="$PROJECT_DIR$/public/styles/login.css" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\style\page.css" afterPath="$PROJECT_DIR$/public/styles/page.css" />
+      <change type="MOVED" beforePath="D:\0PROJECTS\CMS\03Code\CMS\public\style\style.css" afterPath="$PROJECT_DIR$/public/styles/style.css" />
     </list>
     <list id="8561e7f3-15c5-4322-b4ce-d61f9c9d9f3e" name="Rejected commit: Default" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;routes/login.js&#10;" />
     <ignored path="CMS.iws" />
@@ -32,75 +100,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/modules/button/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.7586207">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="admin-index.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/admin/admin-index.jade">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+              <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seed.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/js/seed.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.5115304">
-              <caret line="5410" column="0" selection-start-line="5410" selection-start-column="0" selection-end-line="5410" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#72181#91479#0" expanded="false" />
-                <element signature="e#91845#104315#0" expanded="false" />
-                <element signature="e#105177#113179#0" expanded="false" />
-                <element signature="e#113292#113784#0" expanded="false" />
-                <element signature="e#113882#129940#0" expanded="false" />
-                <element signature="e#130053#142138#0" expanded="false" />
-                <element signature="e#142244#144727#0" expanded="false" />
-                <element signature="e#145572#150427#0" expanded="false" />
-                <element signature="e#150759#153437#0" expanded="false" />
-                <element signature="e#153582#170967#0" expanded="false" />
-                <element signature="e#171450#177303#0" expanded="false" />
-                <element signature="e#177486#181301#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="popMenu.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/ui/popMenu/popMenu.js">
+      <file leaf-file-name="require.main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/require.main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="53" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="53" />
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin-layout-header.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/admin/layout/admin-layout-header.jade">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+            <state vertical-scroll-proportion="-0.6896552">
+              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin-layout.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/admin/layout/admin-layout.jade">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seed-config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/seed-config.js">
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.07029877">
+              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="submit.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/submit.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -111,8 +175,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jade File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Html5" />
       </list>
     </option>
   </component>
@@ -127,37 +192,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dao.js" />
-        <option value="$PROJECT_DIR$/model/module.js" />
-        <option value="$PROJECT_DIR$/model/User.js" />
-        <option value="$PROJECT_DIR$/model/publicModule.js" />
-        <option value="$PROJECT_DIR$/model/Users.js" />
-        <option value="$PROJECT_DIR$/model/UsersDao.js" />
-        <option value="$PROJECT_DIR$/db.js" />
-        <option value="$PROJECT_DIR$/dao/config.js" />
-        <option value="$PROJECT_DIR$/dao/db.js" />
-        <option value="$PROJECT_DIR$/dao/UsersDao.js" />
-        <option value="$PROJECT_DIR$/dao/utils.js" />
-        <option value="$PROJECT_DIR$/routes/login.js" />
-        <option value="$PROJECT_DIR$/routes/restfuls.js" />
-        <option value="$PROJECT_DIR$/dao/submit.js" />
-        <option value="$PROJECT_DIR$/views/layout/layout-login.jade" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/routes/admin/admin.js" />
-        <option value="$PROJECT_DIR$/public/style/admin.css" />
-        <option value="$PROJECT_DIR$/views/login.jade" />
-        <option value="$PROJECT_DIR$/views/layout/layout.jade" />
-        <option value="$PROJECT_DIR$/public/style/page.css" />
-        <option value="$PROJECT_DIR$/views/index.jade" />
+        <option value="$PROJECT_DIR$/public/style/login.css" />
         <option value="$PROJECT_DIR$/views/admin/layout/admin-layout-header.jade" />
-        <option value="D:/Downloads/seajs-3.0.0/dist/sea.js" />
-        <option value="$PROJECT_DIR$/public/js/ui/jquery-1.8.0.js" />
-        <option value="$PROJECT_DIR$/views/admin/layout/admin-layout.jade" />
-        <option value="$PROJECT_DIR$/public/js/ui/jquery.js" />
+        <option value="$PROJECT_DIR$/views/admin/layout/admin-layout-footer.jade" />
+        <option value="$PROJECT_DIR$/public/js/ui/popMenu.js" />
+        <option value="$PROJECT_DIR$/public/js/ui/popMenu/popMenu.html" />
+        <option value="$PROJECT_DIR$/public/js/ui/common.js" />
+        <option value="$PROJECT_DIR$/public/js/ui/popMenu/popMenu.css" />
+        <option value="$PROJECT_DIR$/public/style/admin.css" />
+        <option value="$PROJECT_DIR$/public/js/ui/signin/index.html" />
+        <option value="$PROJECT_DIR$/public/js/ui/signin/signin.css" />
+        <option value="$PROJECT_DIR$/public/js/ui/signin/script.js" />
+        <option value="$USER_HOME$/Desktop/bootstrap-3.3.5/docs/examples/theme/index.html" />
+        <option value="$PROJECT_DIR$/public/js/ui/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/public/js/ui/font-awesome.css" />
+        <option value="$PROJECT_DIR$/public/js/ui/button/bootstrap.css" />
+        <option value="$PROJECT_DIR$/public/js/ui/button/style.css" />
+        <option value="$PROJECT_DIR$/public/js/ui/button/bootstrap-theme.css" />
+        <option value="$PROJECT_DIR$/public/js/ui/button/button-them.css" />
+        <option value="$PROJECT_DIR$/public/js/ui/button/them.css" />
+        <option value="$PROJECT_DIR$/public/js/ui/button/theme.css" />
+        <option value="$PROJECT_DIR$/public/js/ui/button/button.css" />
+        <option value="$PROJECT_DIR$/public/style/base.css" />
+        <option value="$PROJECT_DIR$/public/js/ui/base.css" />
+        <option value="$PROJECT_DIR$/public/js/ui/fonts/font-awesome.css" />
+        <option value="$PROJECT_DIR$/public/js/ui/fonts/index.html" />
+        <option value="$PROJECT_DIR$/public/js/ui/button/index.html" />
+        <option value="$PROJECT_DIR$/public/js/ui/button/button-theme.css" />
+        <option value="$PROJECT_DIR$/public/js/ui/include.js" />
+        <option value="$PROJECT_DIR$/public/js/ui/link.js" />
         <option value="$PROJECT_DIR$/public/js/seed-config.js" />
         <option value="$PROJECT_DIR$/public/js/ui/popMenu/popMenu.js" />
+        <option value="$PROJECT_DIR$/public/modules/sea-config.js" />
+        <option value="$PROJECT_DIR$/public/require.config.js" />
+        <option value="$PROJECT_DIR$/public/libs/jquery.1.8.0.js" />
+        <option value="$PROJECT_DIR$/public/apps/main.js" />
+        <option value="$PROJECT_DIR$/public/libs/swiper.js" />
+        <option value="$PROJECT_DIR$/public/libs/jquery-1.8.0.js" />
+        <option value="$PROJECT_DIR$/public/libs/lazyload.js" />
+        <option value="$PROJECT_DIR$/public/require.main.js" />
+        <option value="$PROJECT_DIR$/public/js/require.js" />
+        <option value="$PROJECT_DIR$/public/js/apps/main.js" />
+        <option value="$PROJECT_DIR$/public/js/modules/text.js" />
+        <option value="$PROJECT_DIR$/public/js/modules/link.js" />
+        <option value="$PROJECT_DIR$/views/admin/layout/admin-layout.jade" />
+        <option value="$PROJECT_DIR$/public/js/modules/txt.js" />
+        <option value="$PROJECT_DIR$/public/js/modules/popMenu/index.html" />
         <option value="$PROJECT_DIR$/views/admin/admin-index.jade" />
+        <option value="$PROJECT_DIR$/public/js/modules/popMenu/main.js" />
+        <option value="$PROJECT_DIR$/public/js/modules/css.js" />
+        <option value="$PROJECT_DIR$/public/js/require.main.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
   </component>
@@ -176,8 +261,150 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="width" value="1456" />
+    <option name="height" value="886" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Assignment issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>Code style issuesCSS</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+          <State>
+            <id>Control flow issuesCoffeeScript</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Cucumber</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Dart</id>
+          </State>
+          <State>
+            <id>Data flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>EJS</id>
+          </State>
+          <State>
+            <id>Error handlingJavaScript</id>
+          </State>
+          <State>
+            <id>File Watchers</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralCoffeeScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Handlebars/Mustache</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>JSON</id>
+          </State>
+          <State>
+            <id>Jade</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript function metricsJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>JsTestDriverJavaScript</id>
+          </State>
+          <State>
+            <id>Less</id>
+          </State>
+          <State>
+            <id>Meteor</id>
+          </State>
+          <State>
+            <id>Naming conventionsJavaScript</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsCSS</id>
+          </State>
+          <State>
+            <id>Probable bugsCoffeeScript</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>Sass/SCSS</id>
+          </State>
+          <State>
+            <id>Unit testingJavaScript</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+          <State>
+            <id>XSLT</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -202,7 +429,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -231,85 +457,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,14 +473,25 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\0PROJECT\CMS\public\js\ui" />
-      <recent name="D:\0PROJECT\CMS\public\style" />
-      <recent name="D:\0PROJECT\CMS\routes\admin" />
-      <recent name="D:\0PROJECTS\CMS\03Code\CMS\dao" />
-      <recent name="D:\0PROJECTS\CMS\03Code\CMS\routes" />
+      <recent name="D:\0PROJECTS\CMS\03Code\CMS\public\js\modules\bootstrap\fonts" />
+      <recent name="D:\0PROJECTS\CMS\03Code\CMS\public\js\modules\bootstrap\js" />
+      <recent name="D:\0PROJECTS\CMS\03Code\CMS\public\js\modules\bootstrap\css" />
+      <recent name="D:\0PROJECTS\CMS\03Code\CMS\public\js\modules" />
+      <recent name="D:\0PROJECTS\CMS\03Code\CMS\public\apps" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\0PROJECTS\CMS\03Code\CMS\public\js\modules\bootstrap" />
+      <recent name="D:\0PROJECTS\CMS\03Code\CMS\public\js" />
+      <recent name="D:\0PROJECTS\CMS\03Code\CMS\public\libs" />
+      <recent name="D:\0PROJECTS\CMS\03Code\CMS\public" />
+      <recent name="D:\0PROJECTS\CMS\03Code\CMS\public\modules" />
     </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -342,14 +508,10 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/images/icons.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/images/logo.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/style/admin.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/style/login.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/style/page.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/popMenu/popMenu.js</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/views/admin/admin-index.jade</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/views/admin/layout/admin-layout-footer.jade</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/views/admin/layout/admin-layout-header.jade</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/views/admin/layout/admin-layout.jade</PATH>
         </FILE-GROUP>
@@ -359,38 +521,9 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/base.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/bootstrap/bootstrap-theme.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/bootstrap/bootstrap-theme.min.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/bootstrap/bootstrap.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/bootstrap/bootstrap.min.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/bootstrap/html5shiv.min.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/bootstrap/ie-emulation-modes-warning.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/bootstrap/ie8-responsive-file-warning.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/bootstrap/respond.min.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/button/bootstrap-theme.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/button/bootstrap.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/button/button-theme.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/button/button.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/button/index.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/button/script.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/button/theme.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/common.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/fonts/FontAwesome.otf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/fonts/font-awesome.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/fonts/font-awesome.min.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/fonts/fontawesome-webfont.eot</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/fonts/fontawesome-webfont.svg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/fonts/fontawesome-webfont.ttf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/fonts/fontawesome-webfont.woff</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/fonts/fontawesome-webfont.woff2</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/fonts/index.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/popMenu/popMenu.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/popMenu/popMenu.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/popMenu/popMenu.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/signin/index.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/signin/script.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/signin/style.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/seed-config.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/include.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/jquery.js</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -398,6 +531,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/js/ui/common.js</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -557,90 +691,72 @@
       <option name="project" value="LOCAL" />
       <updated>1435893963039</updated>
     </task>
-    <task id="LOCAL-00005" summary="data connect success">
-      <created>1435946050386</created>
+    <task id="LOCAL-00005" summary="dao">
+      <created>1435916690249</created>
       <option name="number" value="00005" />
       <option name="project" value="LOCAL" />
-      <updated>1435946050387</updated>
+      <updated>1435916690249</updated>
     </task>
-    <task id="LOCAL-00006" summary="data connect success">
-      <created>1435946112684</created>
+    <task id="LOCAL-00006" summary="dao data close">
+      <created>1435980982919</created>
       <option name="number" value="00006" />
       <option name="project" value="LOCAL" />
-      <updated>1435946112684</updated>
+      <updated>1435980982919</updated>
     </task>
-    <task id="LOCAL-00007" summary="data connect success">
-      <created>1435946267961</created>
+    <task id="LOCAL-00007" summary="dao data close">
+      <created>1435990764321</created>
       <option name="number" value="00007" />
       <option name="project" value="LOCAL" />
-      <updated>1435946267961</updated>
+      <updated>1435990764322</updated>
     </task>
-    <task id="LOCAL-00008" summary="data connect success">
-      <created>1435946432376</created>
+    <task id="LOCAL-00008" summary="add libs">
+      <created>1435997620088</created>
       <option name="number" value="00008" />
       <option name="project" value="LOCAL" />
-      <updated>1435946432376</updated>
+      <updated>1435997620089</updated>
     </task>
-    <task id="LOCAL-00009" summary="data connect success">
-      <created>1435946512611</created>
+    <task id="LOCAL-00009" summary="upadate logo">
+      <created>1436236965025</created>
       <option name="number" value="00009" />
       <option name="project" value="LOCAL" />
-      <updated>1435946512611</updated>
+      <updated>1436236965025</updated>
     </task>
-    <task id="LOCAL-00010" summary="data connect success">
-      <created>1435947342457</created>
+    <task id="LOCAL-00010" summary="update admin">
+      <created>1436261723384</created>
       <option name="number" value="00010" />
       <option name="project" value="LOCAL" />
-      <updated>1435947342457</updated>
+      <updated>1436261723384</updated>
     </task>
-    <task id="LOCAL-00011" summary="data connect success">
-      <created>1435947436941</created>
+    <task id="LOCAL-00011" summary="update ui">
+      <created>1436348188877</created>
       <option name="number" value="00011" />
       <option name="project" value="LOCAL" />
-      <updated>1435947436941</updated>
+      <updated>1436348188877</updated>
     </task>
-    <task id="LOCAL-00012" summary="data connect success">
-      <created>1435947828751</created>
+    <task id="LOCAL-00012" summary="update ui 2015.7.9">
+      <created>1436427590330</created>
       <option name="number" value="00012" />
       <option name="project" value="LOCAL" />
-      <updated>1435947828751</updated>
+      <updated>1436427590330</updated>
     </task>
-    <task id="LOCAL-00013" summary="jquery path change">
-      <created>1436019318042</created>
-      <option name="number" value="00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1436019318042</updated>
-    </task>
-    <task id="LOCAL-00014" summary="and gitignore">
-      <created>1436025249417</created>
-      <option name="number" value="00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1436025249417</updated>
-    </task>
-    <task id="LOCAL-00015" summary="add home page ,admin page">
-      <created>1436116663035</created>
-      <option name="number" value="00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1436116663035</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.245625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24206069" sideWeight="0.7703827" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6380208" sideWeight="0.505" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.114583336" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18359375" sideWeight="0.495" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30208334" sideWeight="0.495" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09893048" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.025401069" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19652407" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328877" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24206069" sideWeight="0.2296173" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38101605" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -663,7 +779,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
     <MESSAGE value="rename logo.css" />
     <MESSAGE value="add database" />
@@ -671,197 +786,109 @@
     <MESSAGE value="db change to localhost" />
     <MESSAGE value="conflict login" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;routes/login.js&#10;" />
-    <MESSAGE value="data connect success" />
-    <MESSAGE value="jquery path change" />
-    <MESSAGE value="and gitignore" />
-    <MESSAGE value="add home page ,admin page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add home page ,admin page" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="dao" />
+    <MESSAGE value="dao data close" />
+    <MESSAGE value="add libs" />
+    <MESSAGE value="upadate logo" />
+    <MESSAGE value="update admin" />
+    <MESSAGE value="update ui" />
+    <MESSAGE value="update ui 2015.7.9" />
+    <option name="LAST_COMMIT_MESSAGE" value="update ui 2015.7.9" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/login.js">
+    <entry file="file://$USER_HOME$/Desktop/seajs-2.2.3/lib/sandbox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/login.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        <state vertical-scroll-proportion="-1.0035149">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/UsersDao.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/restfuls.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/login.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/UsersDao.js">
+    <entry file="file://$USER_HOME$/Desktop/seajs-2.2.3/lib/winos.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/login.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout/layout.jade">
+    <entry file="file://$USER_HOME$/Desktop/seajs-2.2.3/src/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        <state vertical-scroll-proportion="-0.84358525">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/drivers/browser/ReadPreference.js">
+    <entry file="file://$USER_HOME$/Desktop/seajs-2.2.3/lib/sea.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/NodeJS/lib/NodeJS.jar!/com/jetbrains/nodejs/library/node-globals-stub.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1449275">
-          <caret line="304" column="14" selection-start-line="304" selection-start-column="14" selection-end-line="304" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5217391">
+        <state vertical-scroll-proportion="-1.6871705">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.WebStorm10/system/extLibs/nodejs-v0.10.33-src/core-modules-sources/lib/module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04347826">
-          <caret line="332" column="45" selection-start-line="332" selection-start-column="45" selection-end-line="332" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/jade/bin/jade.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/connect.js">
+    <entry file="file://$USER_HOME$/Desktop/seajs-2.2.3/tests/speed/deps-18/combo-amd.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/UsersDao.js">
+    <entry file="file://$USER_HOME$/Desktop/seajs-2.2.3/tests/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.18518518">
+          <caret line="5" column="7" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout/layout-login.jade">
+    <entry file="file://$USER_HOME$/Desktop/seajs-2.2.3/tests/specs/node/meta.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="17" />
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$USER_HOME$/Desktop/seajs-2.2.3/src/sea.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/error.jade">
+    <entry file="file://$USER_HOME$/Desktop/seajs-2.2.3/dist/sea-debug.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="138" column="17" selection-start-line="138" selection-start-column="17" selection-end-line="138" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/seajs-2.2.3/dist/sea.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19117647">
+          <caret line="1" column="1987" selection-start-line="1" selection-start-column="1987" selection-end-line="1" selection-end-column="1987" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -870,84 +897,15 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/admin/admin.js">
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/style/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/login.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/restfuls.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/style/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42093542">
-          <caret line="42" column="6" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding>
-            <marker date="1436281270863" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436281270863" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436281270863" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436281270863" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/ui/button/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="33.172413">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.9463807">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/ui/include.js">
+    <entry file="file://$PROJECT_DIR$/public/js/libs/html5shiv.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -955,108 +913,218 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/ui/button/script.js">
+    <entry file="file://$USER_HOME$/Desktop/angular-1.4.2/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.41899443">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/angular-1.4.2/i18n/angular-locale_af.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/style/page.css">
+    <entry file="file://$PROJECT_DIR$/public/js/libs/angular.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="100" column="20" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Downloads/seajs-3.0.0/dist/sea-debug.js">
+    <entry file="file://$PROJECT_DIR$/public/js/libs/lazyload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.719921">
-          <caret line="1129" column="0" selection-start-line="1129" selection-start-column="0" selection-end-line="1129" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Downloads/seajs-3.0.0/dist/standalone.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.039447732">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.37533513">
+          <caret line="14" column="3276" selection-start-line="14" selection-start-column="3276" selection-end-line="14" selection-end-column="3276" />
           <folding>
             <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Downloads/seajs-3.0.0/dist/runtime.js">
+    <entry file="file://$PROJECT_DIR$/public/js/libs/jquery.1.8.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.039447732">
-          <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="53" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
           <folding>
             <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Downloads/seajs-3.0.0/dist/sea.js">
+    <entry file="file://$PROJECT_DIR$/public/js/libs/jquery-1.8.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56607497">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.19556172">
+          <caret line="378" column="0" selection-start-line="378" selection-start-column="0" selection-end-line="378" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#117#1629#0" expanded="false" />
+            <element signature="e#1653#8964#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.jade">
+    <entry file="file://$USER_HOME$/Desktop/angular-1.4.2/docs/js/nav-data.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9447732">
-          <caret line="43" column="7" selection-start-line="42" selection-start-column="4" selection-end-line="47" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.21447721">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/ui/jquery.js">
+    <entry file="file://$PROJECT_DIR$/public/js/libs/swiper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79123175">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.83449477">
+          <caret line="14" column="44879" selection-start-line="14" selection-start-column="44879" selection-end-line="14" selection-end-column="44879" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/seed-config.js">
+    <entry file="file://$PROJECT_DIR$/public/js/apps/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/layout/admin-layout-header.jade">
+    <entry file="file://$PROJECT_DIR$/public/js/require.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.93322206">
+          <caret line="2086" column="9" selection-start-line="2086" selection-start-column="9" selection-end-line="2086" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/layout/admin-layout-footer.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/ui/popMenu/popMenu.js">
+    <entry file="file://$PROJECT_DIR$/public/js/modules/text.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="53" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="53" />
-          <folding />
+        <state vertical-scroll-proportion="1.2003338">
+          <caret line="379" column="0" selection-start-line="379" selection-start-column="0" selection-end-line="379" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/layout/admin-layout.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/modules/bootstrap/ie-emulation-modes-warning.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/modules/bootstrap/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="78" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/modules/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/modules/fonts/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.037037037">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/modules/link.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10544816">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/modules/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.29174">
+          <caret line="179" column="58" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/modules/css.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/modules/popMenu/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2962963">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/layout/admin-layout-header.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.80843586">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/modules/popMenu/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/modules/button/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/modules/button/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7586207">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1064,30 +1132,48 @@
     <entry file="file://$PROJECT_DIR$/views/admin/admin-index.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/seed.js">
+    <entry file="file://$PROJECT_DIR$/public/js/require.main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5115304">
-          <caret line="5410" column="0" selection-start-line="5410" selection-start-column="0" selection-end-line="5410" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#72181#91479#0" expanded="false" />
-            <element signature="e#91845#104315#0" expanded="false" />
-            <element signature="e#105177#113179#0" expanded="false" />
-            <element signature="e#113292#113784#0" expanded="false" />
-            <element signature="e#113882#129940#0" expanded="false" />
-            <element signature="e#130053#142138#0" expanded="false" />
-            <element signature="e#142244#144727#0" expanded="false" />
-            <element signature="e#145572#150427#0" expanded="false" />
-            <element signature="e#150759#153437#0" expanded="false" />
-            <element signature="e#153582#170967#0" expanded="false" />
-            <element signature="e#171450#177303#0" expanded="false" />
-            <element signature="e#177486#181301#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6896552">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/submit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07029877">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>

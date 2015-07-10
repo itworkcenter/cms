@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../base.css" />
+    <script src="../../require.js"></script>
+    <script src="../../require.main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">Dropdown</div>
+    </div>
+</body>
+</html>
+<script>
+    require(["popMenu"],function(j){
+        $("#Set").popMenu({
+            data: [
+                "Profile",
+                "Setting",
+                "Log out"
+            ]
+        });
+        $("#Nav ul li").popMenu({
+            data: [
+                "dfsfsdfsdfsdfsdfsdf",
+                "Setting",
+                "Log outsfsfdsf"
+            ]
+        });
+    });
+
+</script>

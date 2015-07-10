@@ -1,43 +1,22 @@
 extends layout/admin-layout
 block scripts
-    script(src="/js/ui/popMenu/popMenu.js")
+    script.
+        require(["popMenu"],function(j){
+            $("#Set").popMenu({
+                            data: [
+                                "Profile",
+                                "Setting",
+                                "Log out"
+                            ]
+                        });
+            $("#Nav ul li").popMenu({
+                data: [
+                    "dfsfsdfsdfsdfsdfsdf",
+                    "Setting",
+                    "Log outsfsfdsf"
+                ]
+            });
+        });
 block content
     div#Content
         div.main
-        script.
-            KISSY.ready(function (S) {
-                S.use("popMenu", function (S, J) {
-                    $("#Set").popMenu({
-                        data: [
-                            "Profile",
-                            "Setting",
-                            "Log out"
-                        ]
-                    });
-                    $("#Nav ul li").popMenu({
-                        data: [
-                            "dfsfsdfsdfsdfsdfsdf",
-                            "Setting",
-                            "Log outsfsfdsf"
-                        ]
-                    })
-                })
-            });
-            /*$(function(){
-                $("#Set").popMenu({
-                    data:[
-                        "Profile",
-                        "Setting",
-                        "Log out"
-                    ]
-                });
-                $("#Nav ul li").popMenu({
-                    data:[
-                        "dfsfsdfsdfsdfsdfsdf",
-                        "Setting",
-                        "Log outsfsfdsf"
-                    ]
-                })
-             })*/
-
-

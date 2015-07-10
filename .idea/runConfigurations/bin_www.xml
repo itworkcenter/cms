@@ -3,7 +3,7 @@
     <envs>
       <env name="DEBUG" value="cms.2015.7.1:*" />
     </envs>
-    <browser name="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" start="true" url="http://localhost:3003/" />
+    <browser name="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" start="true" url="http://localhost:3003/admin" />
     <method />
   </configuration>
 </component>
