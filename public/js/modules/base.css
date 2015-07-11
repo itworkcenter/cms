@@ -3,20 +3,6 @@
 @import "fonts/font-awesome.min.css";
 /* ]]> */
 
-/*fonts*/
-@font-face {
-    font-family: 'Open Sans Condensed';
-    font-style: normal;
-    font-weight: 300;
-    src: url('fonts/OpenSans-CondLight.eot'); /* IE9 Compat Modes */
-    src: local('Open Sans Cond Light'),
-    local('OpenSans-CondensedLight'),
-    url('fonts/OpenSans-CondLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('fonts/OpenSans-CondLight.woff') format('woff'), /* Modern Browsers */
-    url('fonts/OpenSans-CondLight.ttf') format('truetype'); /* Safari, Android, iOS */
-    /* url('fonts/OpenSans-CondLight.svg#open_sanscondensed_light') format('svg');  Legacy iOS */
-}
-
 /* base styles file
  * 1、general
  * 2、header
@@ -95,7 +81,7 @@ img {
     font-size: 0;
     overflow: hidden;
     clear:both;
->zoom: 1;
+    >zoom: 1;
 }
 div.show{
     display: block;
@@ -127,7 +113,7 @@ html {
 body {
     min-width: 320px;
     overflow-y: scroll;
->overflow-y: hidden;
+    >overflow-y: hidden;
     background-color: #FFF;
     color: #0D0D0D;
     font-family: Helvetica, Arial, sans-serif;

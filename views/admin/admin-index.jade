@@ -19,4 +19,34 @@ block scripts
         });
 block content
     div#Content
-        div.main
+        div.head-func
+            div.main
+                div.icon-logo
+                div.title
+                    | System \ Control
+                div.func
+                    div.search-func
+                        div.search-input(contenteditable="true")
+                        div.search-btn Search
+        div.left-menu
+            div.sitebar-btn
+                i.arrow.arrow-left.arrow-right
+            ul
+                li
+                    a(href="javascript:;") Content
+                li
+                    a(href="javascript:;") New Article
+                    ul
+                        li
+                            a(href="javascript:;")
+                                i.icon
+                                span.menu-text Find
+                                b.arrow.icon-arrow-down
+                li
+                    a.active(href="javascript:;")  Article
+                    ul
+                        li
+                            a(href="javascript:;")
+                                i.icon
+                                span.menu-text Find
+                                b.arrow.icon-arrow-down

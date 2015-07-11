@@ -309,8 +309,8 @@ fieldset[disabled] .btn-danger.active {
 *button apps styles
 *************************************************************/
 .btn-app{
-    padding: 5px 8px;
-    font-size: 14px;
+    padding: 3px 6px;
+    font-size: 12px;
     line-height: 1.33333;
     border-radius: 6px;
 }
@@ -330,7 +330,22 @@ fieldset[disabled] .btn-danger.active {
 .btn-app-default.active {
     border-color: #333;
 }
-
+.btn-app-new {
+    color: #fff!important;
+    background-color:#556B2F;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    background-repeat: repeat-x;
+    border-color: #475b25;
+}
+.btn-app-new:hover,
+.btn-app-new:focus {
+    background-color: #475a26;
+}
+.btn-app-new:active,
+.btn-app-new.active {
+    border-color: #333;
+}
 .btn-app-edit {
     color: #fff!important;
     background-color:#1d6fa6;

@@ -1,0 +1,14 @@
+/*Color for global*/
+.ns-bg-darkslategray  {
+    background-color:#2F4F4F;
+}
+.ns-color-white{
+    color:white;
+}
+/*position for global*/
+.ns-left{
+    float:left;
+}
+.ns-right{
+    float:right;
+}
