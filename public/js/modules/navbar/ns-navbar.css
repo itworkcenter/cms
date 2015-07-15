@@ -1,9 +1,14 @@
+/*Browser support IE7+*/
+
+/*Base*/
 .ns-nav{
     width:100%;
-    height:inherit;
+    height:100%;
+    overflow:hidden;
     border-radius:3px;
 }
-.ns-nav:after,.ns-nav-main:after{
+.ns-nav:after,
+.ns-nav-main:after{
     height:0;
     content:"after";
     clear:both;
@@ -15,15 +20,12 @@
 }
 .ns-nav-main{
     margin: 0 10px;
-    padding:5px 0;
 }
 .ns-nav-one{
-    padding:5px 0;
     margin:0 5px;
 }
-.ns-nav-list-one{
+.ns-nav-item{
     float:left;
-    margin:0 5px;
 }
 .ns-nav-color{
     color:white;
@@ -31,17 +33,71 @@
 .ns-nav-one{
     float:left;
 }
+.ns-nav-logo{
+    padding:1em 1.2em;
+    color:#c0c0c0;
+    font-weight:bold;
+}
+.ns-nav .ns-nav-list{
+}
+.ns-nav .ns-set{
+}
 
-.ns-nav .ns-logo{}
-.ns-nav .ns-nav-list{}
-.ns-nav .ns-set{}
+
 .ns-nav .ns-nav-a{
-    color:white;
+    display:block;
+    padding:1em 1.2em;
+    color:#c0c0c0;
+}
+.ns-nav-i{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
 }
 
-@media screen and (min-width: 768px){
-    .ns-nav{
-        border:1px solid red;
-    }
-
+/*Theme*/
+.ns-nav-black{
+    background-color:#191818;
 }
+.ns-nav-black .ns-nav-logo{
+    color:#1F8DD6;
+}
+.ns-nav-black .ns-nav-item .ns-nav-a{
+    color:#999;
+}
+.ns-nav-black .ns-nav-item .ns-nav-a:hover,
+.ns-nav-black .ns-nav-item .ns-nav-a:focus{
+    background-color:#333;
+}
+.ns-nav-black .ns-nav-active{
+    background-color:#1F8DD6;
+}
+.ns-nav-black .ns-nav-active .ns-nav-a{
+    color:#fff;
+}
+.ns-nav-black .ns-nav-active .ns-nav-a:hover{
+    background-color:#1F8DD6;
+}
+/*Size*/
+.ns-nav-s,
+.ns-nav-s .ns-nav-one,
+.ns-nav-s .ns-nav-one .ns-nav-item,
+.ns-nav-s .ns-nav-one .ns-nav-item .ns-nav-a{}
+.ns-nav-m,
+.ns-nav-m .ns-nav-one,
+.ns-nav-m .ns-nav-one .ns-nav-item,
+.ns-nav-m .ns-nav-one .ns-nav-item .ns-nav-a{}
+.ns-nav-l{}
+.ns-nav-xl{}
+.ns-nav-xxl{}
+.ns-nav-xxxl{}
+/*Resize*/
+@media only screen and (min-width: 1024px){}
+@media only screen and (min-width: 768px) and (max-width:1023px){}
+@media only screen and (min-width: 640px) and (max-width: 767px){}
+@media only screen and (min-width: 320px) and (max-width: 639px){}
