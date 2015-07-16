@@ -213,16 +213,19 @@ section{
     display: inline-block;
     width: 0;
     height: 0;
-    margin-left: 5px;
+    margin:0 5px;
+    border: 7px solid transparent;
     vertical-align: middle;
 }
 .ns-icon-down{
-    border-top: 4px solid;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
+    border-top-color:inherit;
+    border-bottom:0;
 }
 .ns-icon-right{
-    border-left: 4px solid;
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
+    border-left-color:inherit;
+    border-right:0;
+}
+.ns-icon-left{
+    border-right-color:inherit;
+    border-left:0;
 }

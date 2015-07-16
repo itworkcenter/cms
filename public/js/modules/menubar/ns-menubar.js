@@ -1,11 +1,12 @@
 /**
  * Created by cl8m on 7/11/2015.
  */
-;(function(){
+;
+(function () {
     'use strict';
     if (typeof define === 'function' && define.amd) {
         // AMD (Register as an anonymous module)
-        define(['jquery'], function(){
+        define(['jquery'], function () {
             return Menubar;
         });
     } else if (typeof exports === 'object') {
@@ -13,101 +14,146 @@
         module.exports = Menubar;
     } else {
         // Browser globals
-        window.Menubar=Menubar;
+        window.Menubar = Menubar;
     }
 
 
-    function Menubar(opts){
-        var $this =this;
-        this.defs={
-            handles:{
-                event:"click",
-                data:"",
-                selecter:".ns-menu-a",
-                back:""
+    function Menubar(opts) {
+        var $this = this;
+        this.defs = {
+            handles: {
+                event: "click",
+                data: "",
+                selecter: ".ns-menu-a",
+                back: ""
             },
-            container:".ns-menu"
+            container: ".ns-menu",
+            dir:"0,1,1,0" /*top,right,down,left*/
         };
-        var jsons = opts && this.ext(this.defs,opts);
+        opts && this.ext(this.defs, opts);
+        opts && this.ext(this, this.defs);
 
-        console.log(jsons);
+        var $menu = this.$menu = $(this.defs.container),
+            $hdls = this.handles = this.defs.handles;
 
-        var $menu=this.obj=$(this.defs.container),
-            $hdls=this.handle=this.defs.handles;
+        this.handle({
+            handle: $hdls.event,
+            selecter: $hdls.selecter,
+            data: $hdls.data,
+            back: function () {
+                var $a=$(this),
+                    $main = $a.next(".ns-menu-main"),
+                    $arrow=$(".ns-icon",this),
+                    $item = $main.parent(),
+                    dir="left",
+                    isItem = /ns-menu-item/ig.test($item.attr("class"));
 
-        this.event({
-            handle:$hdls.event,
-            selecter:$hdls.selecter,
-            data:$hdls.data,
-            back:function(){
-                var $main=$(this).next(".ns-menu-main"),
-                    $item=$main.parent(),
-                    isItem= /ns-menu-item/ig.test($item.attr("class"));
-                console.log($main)
-
-                if(/ns-menu-open/ig.test($main.attr("class"))){
-                    $main.removeClass("ns-menu-open").find(".ns-menu-open").removeClass("ns-menu-open");
-                }else{
-                    $main.addClass("ns-menu-open");
+                if (/ns-menu-open/ig.test($item.attr("class"))) {
+                    $item.removeClass("ns-menu-open")
+                        .find(".ns-menu-open")
+                        .removeClass("ns-menu-open");
+                } else {
+                    $item.addClass("ns-menu-open");
                 }
-                /*ÅÐ¶Ï·½Ïò*/
-                if(isItem){
-                    var itemProps=$this.props($item),
-                        mainProps=$this.props($main);
-                    $main.css("left",itemProps.right-itemProps.left);
-                    console.log("============")
+                /*check direction*/
+                if (isItem) {
+                    var itemProps = $this.props($item),
+                        mainProps = $this.props($main);
+                    console.log(mainProps.max+" "+(mainProps.left+mainProps.width));
+                    console.log(mainProps.max-(mainProps.left+mainProps.width));
+
+                    dir = (mainProps.max-mainProps.left-mainProps.width)>0?"right":"left";
+
+                    var clone=$arrow
+                            .removeAttr("class")
+                            .addClass("ns-icon")
+                            .clone(),
+                        dirProcess={
+                            left:function(dir){
+                                $a.prepend(this.clone(dir));
+                                $main.css("left", itemProps.left - itemProps.right);
+                            },
+                            right:function(dir){
+                                $a.append(this.clone(dir));
+                                $main.css("left", itemProps.right - itemProps.left);
+                            },
+                            clone:function(dir){
+                                $main.css("top", itemProps.height);
+                                return clone.addClass("ns-icon-"+dir);
+                            }
+                        };
+                    $arrow.remove();
                     console.log(itemProps)
-                    console.log(mainProps)
+                    console.log(dir)
+                    dirProcess[dir](dir);
                 }
-        }});
-
-
+            }
+        });
 
         /*$(window).scroll(function(){
-            var sclTop=$(this).scrollTop();
+         var sclTop=$(this).scrollTop();
 
-            if(sclTop>pos.top){
-                obj.addClass("ns-nav-scroll");
-            }else if(sclTop<=pos.top){
-                obj.removeClass("ns-nav-scroll");
-            }
+         if(sclTop>pos.top){
+         obj.addClass("ns-nav-scroll");
+         }else if(sclTop<=pos.top){
+         obj.removeClass("ns-nav-scroll");
+         }
 
-        }).scroll();*/
+         }).scroll();*/
         /*initialize*/
     }
-    Menubar.prototype.event=function(json){
-      this.obj.on(
-          json.handle,
-          json.selecter,
-          json.data,
-          json.back
-      );
+
+    Menubar.prototype.handle = function (json) {
+        var $this=this;
+        this.$menu.on(
+            json.handle,
+            json.selecter,
+            json.data,
+            function(e){
+                var $currMenu=$(this).parent();
+                $currMenu.siblings().removeClass("ns-menu-open");
+                $(".ns-menu-open",$currMenu.siblings()).removeClass("ns-menu-open");
+                json.back.apply(this,e);
+                e.stopPropagation();
+                return false;
+            }
+        );
+        $("body").on(json.handle, function () {
+            clear();
+        });
+        $(window).resize(function(){
+            clear();
+        });
+        function clear(){
+            $(".ns-menu-open").removeClass("ns-menu-open");
+        }
     };
 
-    Menubar.prototype.props=function($obj){
-        var rslts={};
-        this.ext(rslts,$obj.offset());
-        rslts.width=$obj.width();
-        rslts.height=$obj.height();
-        rslts.right=rslts.left+rslts.width;
-        rslts.bottom=rslts.top+rslts.height;
+    Menubar.prototype.props = function ($obj) {
+        var rslts = {};
+        this.ext(rslts, $obj.offset());
+        rslts.width = $obj.width();
+        rslts.height = $obj.height();
+        rslts.right = rslts.left + rslts.width;
+        rslts.bottom = rslts.top + rslts.height;
+        rslts.max=$(window).width();
         return rslts;
     };
-    Menubar.prototype.ext=function(o,s){
-        if(o&&s){
-            for(var i in s){
-                if(typeof s[i] === "object"){
-                    if(!(typeof o[i] === "object")){
-                        o[i]={}
+    Menubar.prototype.ext = function (o, s) {
+        if (o && s) {
+            for (var i in s) {
+                if (typeof s[i] === "object") {
+                    if (!(typeof o[i] === "object")) {
+                        o[i] = {}
                     }
-                    this.ext(o[i],s[i]);
-                }else if(typeof s[i] === "array"){
-                    if(!(typeof o[i] === "array")){
-                        o[i]=[];
+                    this.ext(o[i], s[i]);
+                } else if (typeof s[i] === "array") {
+                    if (!(typeof o[i] === "array")) {
+                        o[i] = [];
                     }
-                    this.ext(o[i],s[i]);
-                }else{
-                    o[i]=s[i];
+                    this.ext(o[i], s[i]);
+                } else {
+                    o[i] = s[i];
                 }
             }
         }
