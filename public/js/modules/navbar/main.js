@@ -1,1 +1,1 @@
-define(["./navbar"],function($){});
+define(["./ns-navbar"],function($){});

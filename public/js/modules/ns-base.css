@@ -206,3 +206,23 @@ section{
     clear:both;
 >zoom: 1;
 }
+/*
+*Icons
+****************************/
+.ns-icon{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.ns-icon-down{
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.ns-icon-right{
+    border-left: 4px solid;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}

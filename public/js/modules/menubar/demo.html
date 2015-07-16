@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>jNose Menu</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Web UI,UI library">
+    <meta name="description" content="Web UI for jNose.">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=7; IE=EDGE">
+    <link rel="stylesheet" href="../ns-base.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
+    <!--if lt IE 9
+        <script src="../lib/html5shiv.js"></script>
+        <script src="../lib/respond.js"></script>
+        <link rel="stylesheet" href="assets/css/ie8.css">
+    -->
+    <!--if IE 9
+        <link rel="stylesheet" href="assets/css/ie8.css">
+    -->
+    <script src="../../require.js"></script>
+    <script>
+        requirejs.config({
+            paths: {
+                css: "../../modules/css",
+                jquery: "../../libs/jquery.1.8.0",
+                "ns-menubar":"./ns-menubar"
+            }
+        });
+    </script>
+    <style>
+        .ns-menu{
+            width:150px;
+            background-color:#333;
+            color:#fff;
+        }
+
+</style>
+</head>
+<body>
+<div style="width:1024px;border:5px solid #000;"></div>
+<div style="width:768px;border:5px solid #333;"></div>
+<div style="width:640px;border:5px solid #666;"></div>
+<div style="width:320px;border:5px solid #999;"></div>
+<div class="container">
+    <section>
+        <div class="ns-menu">
+            <a class="ns-menu-a" href="javascript:;">菜单<i class="ns-icon ns-icon-down"></i></a>
+            <div class="ns-menu-main ns-menu-black">
+                <ul class="ns-menu-items">
+                    <li class="ns-menu-item"><a class="ns-menu-a">一级菜单</a></li>
+                    <li class="ns-menu-item">
+                        <a class="ns-menu-a">一级菜单<i class="ns-icon ns-icon-right"></i></a>
+                        <div class="ns-menu-main">
+                            <ul class="ns-menu-items">
+                                <li class="ns-menu-item"><a class="ns-menu-a">二级菜单</a></li>
+                                <li class="ns-menu-item"><a class="ns-menu-a">二级菜单</a></li>
+                                <li class="ns-menu-item"><a class="ns-menu-a">二级菜单</a></li>
+                                <li class="ns-menu-item">
+                                    <a class="ns-menu-a">二级菜单<i class="ns-icon ns-icon-right"></i></a>
+                                    <div class="ns-menu-main">
+                                        <ul class="ns-menu-items">
+                                            <li class="ns-menu-item"><a class="ns-menu-a">三级菜单</a></li>
+                                            <li class="ns-menu-item"><a class="ns-menu-a">三级菜单</a></li>
+                                            <li class="ns-menu-item"><a class="ns-menu-a">三级菜单</a></li>
+                                            <li class="ns-menu-item"><a class="ns-menu-a">三级菜单</a></li>
+                                            <li class="ns-menu-item"><a class="ns-menu-a">三级菜单</a></li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+                                <li class="ns-menu-item"><a class="ns-menu-a">二级菜单</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="ns-menu-item"><a class="ns-menu-a">一级菜单</a></li>
+                    <li class="ns-menu-item"><a class="ns-menu-a">一级菜单</a></li>
+                    <li class="ns-menu-item"><a class="ns-menu-a">一级菜单</a></li>
+                    <li class="ns-menu-item"><a class="ns-menu-a">一级菜单</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="background-color:#fefefe;padding:20px;border:1px solid darkgray">
+            <p>The content</p>
+            <p>The content</p>
+            <p>The content</p>
+            <p>The content</p>
+            <p>The content</p>
+            <p>The content</p>
+            <p>The content</p>
+            <p>The content</p>
+            <p>The content</p>
+            <p>The content</p>
+            <p>The content</p>
+            <p>The content</p>
+            <p>The content</p>
+            <p>The content</p>
+            <p>The content</p>
+            <p>The content</p>
+            <p>The content</p>
+            <p>The content</p>
+            <p>The content</p>
+            <p>The content</p>
+            <p>The content</p>
+        </div>
+    </section>
+</div>
+</body>
+</html>
+<script>
+    require(["jquery","ns-menubar","css!./ns-menubar.css"],function($,Menubar){
+        new Menubar({
+            handles:{
+                data:["menu1","menu2"]
+            },
+            gogo:"go",
+            bb:{
+                aa:1,
+                haha:function(){},
+                cc:true,
+                ee:""
+            },
+            ic:123,
+            ice:function(){}
+        });
+    });
+</script>

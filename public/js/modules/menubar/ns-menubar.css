@@ -1,14 +1,11 @@
 /*Browser support IE7+*/
 
 /*Base*/
-.ns-nav{
-    width:100%;
-    min-width:320px;
-    min-height:40px;
-    overflow:hidden;
+.ns-menu{
+    position:relative;
 }
-.ns-nav:after,
-.ns-nav-main:after{
+.ns-menu:after,
+.ns-menu-main:after{
     height:0;
     content:"after";
     clear:both;
@@ -18,65 +15,53 @@
     overflow: hidden;
     >zoom: 1;
 }
-.ns-nav-main{
-    margin: 0 10px;
+.ns-menu-main{
+    display: none;
+    position:absolute;
+    width:100%;
+    background-color:#fff;
+    z-index:10000;
+    zoom:1;
 }
-.ns-nav-item{
+.ns-menu-items{
+    width:100%;
+}
+.ns-menu-one{
     float:left;
 }
-.ns-nav-color{
-    color:white;
-}
-.ns-nav-one{
-    float:left;
-}
-.ns-nav-logo{
-    color:#c0c0c0;
-    font-weight:bold;
-}
-.ns-nav-list{
-    /*border:1px solid red;*/
-}
-.ns-nav-bar{
+.ns-menu-bar{
     display: none;
     color:white;
     font-weight:bolder;
 }
-.ns-nav-set{
-    float:right;
-    /*border:1px solid blue;*/
-}
-.ns-nav-a{
+.ns-menu-a{
     display:block;
     padding:1em 1.2em;
     color:#c0c0c0;
 }
 /*State*/
-.ns-nav-scroll{
-    position:fixed;
-    top:0;
+.ns-menu-scroll{}
+.ns-menu-open{
+    display:block;
 }
 /*Theme*/
-.ns-nav-black{
-    background-color:#191818;
+.ns-menu-black,.ns-menu-black .ns-menu-main{
+    background-color:#666;
 }
-.ns-nav-black .ns-nav-logo{
-    color:#1F8DD6;
-}
-.ns-nav-black .ns-nav-item .ns-nav-a{
+.ns-menu-black .ns-menu-item .ns-menu-a{
     color:#999;
 }
-.ns-nav-black .ns-nav-item .ns-nav-a:hover,
-.ns-nav-black .ns-nav-item .ns-nav-a:focus{
+.ns-menu-black .ns-menu-item .ns-menu-a:hover,
+.ns-menu-black .ns-menu-item .ns-menu-a:focus{
     background-color:#333;
 }
-.ns-nav-black .ns-nav-active{
+.ns-menu-black .ns-menu-active{
     background-color:#1F8DD6;
 }
-.ns-nav-black .ns-nav-active .ns-nav-a{
+.ns-menu-black .ns-menu-active .ns-menu-a{
     color:#fff;
 }
-.ns-nav-black .ns-nav-active .ns-nav-a:hover{
+.ns-menu-black .ns-menu-active .ns-menu-a:hover{
     background-color:#1F8DD6;
 }
 /*Size*/

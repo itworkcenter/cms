@@ -1,0 +1,1 @@
+define(["./ns-menubar"],function($){});
