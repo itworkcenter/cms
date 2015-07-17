@@ -16,29 +16,86 @@
         window.Navbar=Navbar;
     }
 
-
     function Navbar(opts){
         this.defs={
+            handles: {
+                event: "click",
+                data: "",
+                selecter:".ns-nav-bar",
+                back: ""
+            },
             isScreenFollow:true,
             container:".ns-nav"
         };
-        opts && this.ext(this.defs,opts);
-        this.obj=$(this.defs.container);
+        opts && this.ext(this.defs, opts);
+        opts && this.ext(this, this.defs);
 
-        var obj=this.obj,pos=obj.offset();
+        var $nav = this.$nav = $(this.defs.container),
+            $hdls = this.handles = this.defs.handles;
+
+        this.handle({
+            event: $hdls.event,
+            selecter: $hdls.selecter,
+            data: $hdls.data,
+            back: function () {
+                var $a = $(this),
+                    $item = $a.parent(),
+                    $main = $a.next(".ns-nav-main"),
+                    $arrow = $(".ns-icon", this),
+                    dir = "left";
+
+                if (/ns-nav-bar-open/ig.test($item.attr("class"))) {
+                    $item.removeClass("ns-nav-bar-open")
+                        .find(".ns-nav-bar-open")
+                        .removeClass("ns-nav-bar-open");
+                } else {
+                    $item.addClass("ns-nav-bar-open");
+                }
+
+            }
+        });
+    }
+    Navbar.prototype.handle=function(json){
+        var $nav = this.$nav,
+            pos=$nav.offset();
+
+        this.$nav.on(
+            json.event,
+            json.selecter,
+            json.data,
+            function (e) {
+
+                var $currBar = $(this).parent();
+
+                $currBar.siblings().removeClass("ns-nav-bar-open");
+                //clearopen($currBar.siblings());
+
+                json.back.apply(this, e);
+            }
+        );
+
+        $(window).resize(function(){});
 
         $(window).scroll(function(){
+
             var sclTop=$(this).scrollTop();
 
             if(sclTop>pos.top){
-                obj.addClass("ns-nav-scroll");
+                $nav.addClass("ns-nav-scroll");
             }else if(sclTop<=pos.top){
-                obj.removeClass("ns-nav-scroll");
+                $nav.removeClass("ns-nav-scroll");
             }
-
         }).scroll();
-        /*initialize*/
-    }
+
+        /*clear open*/
+        function clearopen(scope){
+            $("[class*='-open']",scope).each(function(){
+                var curr = $(this),
+                    currCls=curr.attr("class").replace(/-open/ig,"");
+                curr.attr("class",currCls);
+            });
+        }
+    };
     Navbar.prototype.ext=function(o,s){
         if(o&&s){
             for(var i in s){

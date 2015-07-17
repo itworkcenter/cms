@@ -5,10 +5,8 @@
     width:100%;
     min-width:320px;
     min-height:40px;
-    overflow:hidden;
 }
-.ns-nav:after,
-.ns-nav-main:after{
+.ns-nav:after{
     height:0;
     content:"after";
     clear:both;
@@ -18,9 +16,7 @@
     overflow: hidden;
     >zoom: 1;
 }
-.ns-nav-main{
-    margin: 0 10px;
-}
+.ns-nav-main{}
 .ns-nav-item{
     float:left;
 }
@@ -56,7 +52,20 @@
     position:fixed;
     top:0;
 }
+.ns-nav-bar-open{}
+.ns-nav-bar-open .ns-nav-items{
+    position:absolute;
+    left:0;
+    width:100%;
+    display:block;
+    background-color:#333;
+}
+.ns-nav-bar-open .ns-nav-item{
+    width:100%;
+
+}
 /*Theme*/
+/*Theme-black*/
 .ns-nav-black{
     background-color:#191818;
 }
@@ -79,6 +88,33 @@
 .ns-nav-black .ns-nav-active .ns-nav-a:hover{
     background-color:#1F8DD6;
 }
+/*Theme-blue*/
+.ns-nav-blue{
+    background-color:#26519E;
+}
+.ns-nav-blue .ns-nav-logo{
+    color:#1F8DD6;
+}
+.ns-nav-blue .ns-nav-item .ns-nav-a{
+    font-weight:bold;
+    color:#fff;
+}
+.ns-nav-blue .ns-nav-item .ns-nav-a:hover,
+.ns-nav-blue .ns-nav-item .ns-nav-a:focus{
+    background-color:#F3F3F3;
+    color:#333;
+}
+.ns-nav-blue .ns-nav-active{
+    background-color:#F3F3F3;
+}
+.ns-nav-blue .ns-nav-active .ns-nav-a{
+    color:#333;
+}
+.ns-nav-blue .ns-nav-active .ns-nav-a:hover{
+    background-color:#1F8DD6;
+}
+
+
 /*Size*/
 .ns-nav-s,
 .ns-nav-s .ns-nav-one,
@@ -112,7 +148,6 @@
         display:none;
     }
 }
-
 
 @media only screen and (min-width: 768px) and (max-width:1023px){  }
 @media only screen and (min-width: 640px) and (max-width: 767px){}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>jNose Navbar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Web UI,UI library">
+    <meta name="description" content="Web UI for jNose.">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=7; IE=EDGE">
+    <link rel="stylesheet" href="../ns-base.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
+    <!--if lt IE 9
+        <script src="../lib/html5shiv.js"></script>
+        <script src="../lib/respond.js"></script>
+        <link rel="stylesheet" href="assets/css/ie8.css">
+    -->
+    <!--if IE 9
+        <link rel="stylesheet" href="assets/css/ie8.css">
+    -->
+    <script>
+        /* var require ={
+         paths: {
+         css: "../../modules/css",
+         jquery: "../../libs/jquery.1.8.0",
+         menubar: "../../modules/menubar/main",
+         main:"./main"
+         },
+         packages:[
+
+         ]
+         };*/
+    </script>
+    <script src="../../require.js"></script>
+    <script>
+        require.config({
+            paths: {
+                css: "../../modules/css",
+                jquery: "../../libs/jquery.1.8.0",
+                main: "./main"
+            },
+            urlArgs: "v=" + (new Date()).getTime()
+        });
+    </script>
+    <style>
+        /*.ns-nav{
+            height:100px;
+        }*/
+        iframe{
+            border:0;
+            height:300px;
+        }
+    </style>
+</head>
+<body>
+<div class="ns-nav ns-nav-black">
+    <div class="ns-main">
+        <div class="ns-nav-one ns-nav-logo"><a class="ns-nav-a" href="javascript:;">JNOSE</a></div>
+        <div class="ns-nav-one ns-nav-list">
+            <div class="ns-nav-bar"><a class="ns-nav-a" href="javascript:;">Menu<i class="ns-icon ns-icon-down"></i></a>
+            </div>
+            <div class="ns-nav-main">
+                <ul class="ns-nav-items">
+                    <li class="ns-nav-item"><a class="ns-nav-a" href="javascript:;">Home</a></li>
+                    <li class="ns-nav-item ns-nav-active ns-menu">
+                        <a class="ns-menu-a" href="javascript:;">Product<i class="ns-icon ns-icon-down"></i></a>
+
+                        <div class="ns-menu-main ns-menu-black">
+                            <ul class="ns-menu-items">
+                                <li class="ns-menu-item"><a class="ns-menu-a">一级菜单</a></li>
+                                <li class="ns-menu-item">
+                                    <a class="ns-menu-a">一级菜单<i class="ns-icon ns-icon-right"></i></a>
+
+                                    <div class="ns-menu-main">
+                                        <ul class="ns-menu-items">
+                                            <li class="ns-menu-item"><a class="ns-menu-a">二级菜单二级菜单二级菜单二级菜单二级菜单二级菜单</a>
+                                            </li>
+                                            <li class="ns-menu-item"><a class="ns-menu-a">二级菜单</a></li>
+                                            <li class="ns-menu-item"><a class="ns-menu-a">二级菜单</a></li>
+                                            <li class="ns-menu-item">
+                                                <a class="ns-menu-a">二级菜单二级菜单二级菜单二级菜单二级菜单二级菜单二级菜单二级菜单二级菜单<i
+                                                        class="ns-icon ns-icon-right"></i></a>
+
+                                                <div class="ns-menu-main">
+                                                    <ul class="ns-menu-items">
+                                                        <li class="ns-menu-item"><a class="ns-menu-a">三级菜单</a></li>
+                                                        <li class="ns-menu-item"><a class="ns-menu-a">三级菜单</a></li>
+                                                        <li class="ns-menu-item"><a class="ns-menu-a">三级菜单</a></li>
+                                                        <li class="ns-menu-item"><a class="ns-menu-a">三级菜单</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="ns-menu-item"><a class="ns-menu-a">二级菜单</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="ns-menu-item"><a class="ns-menu-a">一级菜单</a></li>
+                                <li class="ns-menu-item"><a class="ns-menu-a">一级菜单</a></li>
+                                <li class="ns-menu-item"><a class="ns-menu-a">一级菜单</a></li>
+                                <li class="ns-menu-item"><a class="ns-menu-a">一级菜单</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="ns-nav-item"><a class="ns-nav-a" href="javascript:;">Contract</a></li>
+                    <li class="ns-nav-item"><a class="ns-nav-a" href="javascript:;">Contract</a></li>
+                    <li class="ns-nav-item ns-menu">
+                        <a class="ns-menu-a" href="javascript:;">Category<i class="ns-icon ns-icon-down"></i></a>
+
+                        <div class="ns-menu-main ns-menu-black">
+                            <ul class="ns-menu-items">
+                                <li class="ns-menu-item"><a class="ns-menu-a">一级菜单</a></li>
+                                <li class="ns-menu-item">
+                                    <a class="ns-menu-a">一级菜单<i class="ns-icon ns-icon-right"></i></a>
+
+                                    <div class="ns-menu-main">
+                                        <ul class="ns-menu-items">
+                                            <li class="ns-menu-item"><a class="ns-menu-a">二级菜单二级菜单二级菜单二级菜单二级菜单二级菜单</a>
+                                            </li>
+                                            <li class="ns-menu-item"><a class="ns-menu-a">二级菜单</a></li>
+                                            <li class="ns-menu-item"><a class="ns-menu-a">二级菜单</a></li>
+                                            <li class="ns-menu-item">
+                                                <a class="ns-menu-a">二级菜单二级菜单二级菜单二级菜单二级菜单二级菜单二级菜单二级菜单二级菜单<i
+                                                        class="ns-icon ns-icon-right"></i></a>
+
+                                                <div class="ns-menu-main">
+                                                    <ul class="ns-menu-items">
+                                                        <li class="ns-menu-item"><a class="ns-menu-a">三级菜单</a></li>
+                                                        <li class="ns-menu-item"><a class="ns-menu-a">三级菜单</a></li>
+                                                        <li class="ns-menu-item">
+                                                            <a class="ns-menu-a">三级菜单<i
+                                                                    class="ns-icon ns-icon-right"></i></a>
+
+                                                            <div class="ns-menu-main">
+                                                                <ul class="ns-menu-items">
+                                                                    <li class="ns-menu-item"><a
+                                                                            class="ns-menu-a">四级菜单</a>
+                                                                    </li>
+                                                                    <li class="ns-menu-item"><a
+                                                                            class="ns-menu-a">四级菜单</a>
+                                                                    </li>
+                                                                    <li class="ns-menu-item"><a
+                                                                            class="ns-menu-a">四级菜单</a>
+                                                                    </li>
+                                                                    <li class="ns-menu-item"><a
+                                                                            class="ns-menu-a">四级菜单</a>
+                                                                    </li>
+                                                                    <li class="ns-menu-item"><a
+                                                                            class="ns-menu-a">四级菜单</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ns-menu-item"><a class="ns-menu-a">三级菜单</a></li>
+                                                        <li class="ns-menu-item"><a class="ns-menu-a">三级菜单</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="ns-menu-item"><a class="ns-menu-a">二级菜单</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="ns-menu-item"><a class="ns-menu-a">一级菜单</a></li>
+                                <li class="ns-menu-item"><a class="ns-menu-a">一级菜单</a></li>
+                                <li class="ns-menu-item"><a class="ns-menu-a">一级菜单</a></li>
+                                <li class="ns-menu-item"><a class="ns-menu-a">一级菜单</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="ns-nav-item"><a class="ns-nav-a" href="javascript:;">Contract</a></li>
+                    <li class="ns-nav-item"><a class="ns-nav-a" href="javascript:;">Contract</a></li>
+                    <li class="ns-nav-item"><a class="ns-nav-a" href="javascript:;">Contract</a></li>
+                    <li class="ns-nav-item"><a class="ns-nav-a" href="javascript:;">Contract</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ns-nav-one ns-nav-set">
+            <div class="ns-nav-bar ns-nav-bar-set"><a class="ns-nav-a" href="javascript:;">Set<i
+                    class="ns-icon ns-icon-down"></i></a></div>
+            <div class="ns-nav-main">
+                <ul class="ns-nav-items ns-nav-items-set">
+                    <li class="ns-nav-item"><a class="ns-nav-a" href="javascript:;">Person Info</a></li>
+                    <li class="ns-nav-item"><a class="ns-nav-a" href="javascript:;">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="padding:20px;">
+    What is Bootstrap?
+
+    Bootstrap is a free front-end framework for faster and easier web development
+    Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals,
+    image carousels and many other, as well as optional JavaScript plugins
+    Bootstrap also gives you the ability to easily create responsive designs
+    What is Bootstrap?
+
+    Bootstrap is a free front-end framework for faster and easier web development
+    Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals,
+    image carousels and many other, as well as optional JavaScript plugins
+    Bootstrap also gives you the ability to easily create responsive designs
+    What is Bootstrap?
+
+    Bootstrap is a free front-end framework for faster and easier web development
+    Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals,
+    image carousels and many other, as well as optional JavaScript plugins
+    Bootstrap also gives you the ability to easily create responsive designs
+    What is Bootstrap?
+
+    Bootstrap is a free front-end framework for faster and easier web development
+    Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals,
+    image carousels and many other, as well as optional JavaScript plugins
+    Bootstrap also gives you the ability to easily create responsive designs
+    What is Bootstrap?
+
+    Bootstrap is a free front-end framework for faster and easier web development
+    Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals,
+    image carousels and many other, as well as optional JavaScript plugins
+    Bootstrap also gives you the ability to easily create responsive designs
+
+</div>
+</body>
+</html>
+<script>
+    require(["jquery",
+                "main",
+                "../../modules/menubar/main"],
+            function ($, Navbar, Menubar) {
+                new Navbar();
+                new Menubar({
+                    handles: {
+                        /*event:"mouseover",*/
+                        data: ["menu1", "menu2"]
+                    }
+                });
+            });
+</script>
