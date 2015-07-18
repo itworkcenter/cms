@@ -1,8 +1,7 @@
 /**
  * Created by cl8m on 7/11/2015.
  */
-;
-(function () {
+;(function () {
     'use strict';
     if (typeof define === 'function' && define.amd) {
         // AMD (Register as an anonymous module)
@@ -40,65 +39,57 @@
             selecter: $hdls.selecter,
             data: $hdls.data,
             back: function () {
-                var $a = $(this),
-                    $main = $a.next(".ns-menu-main"),
-                    $arrow = $(".ns-icon", this),
-                    $item = $main.parent(),
-                    dir = "left",
-                    isItem = /ns-menu-item/ig.test($item.attr("class"));
-
-                if (/ns-menu-open/ig.test($item.attr("class"))) {
-                    $item.removeClass("ns-menu-open")
-                        .find(".ns-menu-open")
-                        .removeClass("ns-menu-open");
-                } else {
-                    $item.addClass("ns-menu-open");
-                }
-                /*check direction*/
-                if (isItem) {
-                    var itemProps = $this.props($item),
-                        mainProps = $this.props($main);
-                    //console.log(mainProps.max + " " + (mainProps.left + mainProps.width));
-                    //console.log(mainProps.max - (mainProps.left + mainProps.width));
-
-                    dir = (mainProps.max - mainProps.left - mainProps.width) > 0 ? "right" : "left";
-
-                    var clone = $arrow
-                            .removeAttr("class")
-                            .addClass("ns-icon")
-                            .clone(),
-                        dirProcess = {
-                            left: function (dir) {
-                                $a.prepend(this.clone(dir));
-                                $main.css({"left": (itemProps.left - itemProps.right) + "px"});
-                            },
-                            right: function (dir) {
-                                $a.append(this.clone(dir));
-                                $main.css({"left": (itemProps.right - itemProps.left) + "px"});
-                            },
-                            clone: function (dir) {
-                                $main.css({"top": 0});
-                                return clone.addClass("ns-icon-" + dir);
-                            }
-                        };
-                    $arrow.remove();
-                    dirProcess[dir](dir);
+                if(this.menuTrans){
+                    $this.handlefuntrans.apply(this);
+                }else{
+                    $this.handlefun.apply(this);
                 }
             }
         });
 
+        this.transform();
     }
 
+    /*Transform to mobile*/
+    Menubar.prototype.transform=function(){
+        this.$menu.each(function(i){
+            $(this).attr("transid","trans"+i).prepend("<div class='ns-menu-trans-trigger'></div>");
+            define($(this),i);
+        });
+        function define($menu,i){
+            var $trans=$("<div></div>").appendTo("body");
+            $trans
+                .attr("class",$menu.attr("class"))
+                .addClass("ns-menu-trans")
+                .attr("id","trans"+i)
+                .append($menu.children(".ns-menu-main").clone());
+        }
+    };
+
+    /*Event*/
     Menubar.prototype.handle = function (json) {
         this.$menu.on(
             json.event,
-            json.selecter,
+            json.selecter,/*ns-menu-a*/
             json.data,
             function (e) {
+                var transtrigger=$(".ns-menu-trans-trigger",$(this).parent()),
+                    transid=$(this).parent().attr("transid");
+                    this.menuContext = $(this).parent();
+                this.menuTrans=false;
+
+                /*transform*/
+                if(transtrigger.css("display")!="none"){
+                    this.menuContext =$(transid);
+                    this.menuTrans=true;
+                }
+
                 var $currMenu = $(this).parent();
-                $currMenu.siblings().removeClass("ns-menu-open");
+                this.menuContext.siblings().removeClass("ns-menu-open");
+
                 $(".ns-menu-open", $currMenu.siblings()).removeClass("ns-menu-open");
-                json.back.apply(this, e);
+
+                json.back.apply(this);
                 e.stopPropagation();
                 return false;
             }
@@ -113,7 +104,61 @@
             $(".ns-menu-open").removeClass("ns-menu-open");
         }
     };
+    Menubar.prototype.handlefuntrans=function(){
+        console.log("handlefuntrans")
 
+    };
+    Menubar.prototype.handlefun=function(){
+        console.log("handlefun")
+
+        var context = this.menuContext,
+            $a = context.children(".ns-menu-a"),
+            $main = $a.next(".ns-menu-main"),
+            $arrow = $(".ns-icon", $a),
+            $item = $main.parent(),
+            dir = "left",
+            isItem = /ns-menu-item/ig.test($item.attr("class"));
+
+        if (/ns-menu-open/ig.test($item.attr("class"))) {
+            $item.removeClass("ns-menu-open")
+                .find(".ns-menu-open")
+                .removeClass("ns-menu-open");
+        } else {
+            $item.addClass("ns-menu-open");
+        }
+        /*check direction*/
+        if (isItem) {
+            var itemProps = $this.props($item),
+                mainProps = $this.props($main);
+            //console.log(mainProps.max + " " + (mainProps.left + mainProps.width));
+            //console.log(mainProps.max - (mainProps.left + mainProps.width));
+
+            dir = (mainProps.max - mainProps.left - mainProps.width) > 0 ? "right" : "left";
+
+            var clone = $arrow
+                    .removeAttr("class")
+                    .addClass("ns-icon")
+                    .clone(),
+                dirProcess = {
+                    left: function (dir) {
+                        $a.prepend(this.clone(dir));
+                        $main.css({"left": (itemProps.left - itemProps.right) + "px"});
+                    },
+                    right: function (dir) {
+                        $a.append(this.clone(dir));
+                        $main.css({"left": (itemProps.right - itemProps.left) + "px"});
+                    },
+                    clone: function (dir) {
+                        $main.css({"top": 0});
+                        return clone.addClass("ns-icon-" + dir);
+                    }
+                };
+            $arrow.remove();
+            dirProcess[dir](dir);
+        }
+
+    };
+    /*Get Property*/
     Menubar.prototype.props = function ($obj) {
         var rslts = {};
         this.ext(rslts, $obj.offset());
@@ -124,6 +169,7 @@
         rslts.max = $(window).width();
         return rslts;
     };
+    /*Extend Object*/
     Menubar.prototype.ext = function (o, s) {
         if (o && s) {
             for (var i in s) {
