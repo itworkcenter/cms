@@ -3,15 +3,14 @@
 /*Base*/
 .ns-pop{
     /*position: relative;*/
-    position:absolute;
+    /*position:absolute;
     left:0;
     top:0;
     width:100%;
     height:100%;
     z-index:1000000;
     zoom:1;
-    background-image:url(../images/bg-cover.png);
-
+    background-image:url(../images/bg-cover.png);*/
 }
 .ns-pop-main{
     position:fixed;
@@ -19,7 +18,6 @@
     left:50%;
     margin-left:-320px;
     max-width:600px;
-    width:84%;
     padding:25px 20px;
     min-height:300px;
     background-color:white;
@@ -40,6 +38,14 @@
     text-transform: none;
     text-align: center;
     display: block;
+}
+.ns-pop-content{
+    margin-top:20px;
+    height:100%;
+    width:100%;
+    word-break: break-all;
+    word-wrap: break-word;
+    border:1px solid red;
 }
 
 .ns-menu:after,
