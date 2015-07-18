@@ -39,7 +39,7 @@
             selecter: $hdls.selecter,
             data: $hdls.data,
             back: function () {
-                if(this.menuTrans){
+                if(this.isTrans){
                     $this.handlefuntrans.apply(this);
                 }else{
                     $this.handlefun.apply(this);
@@ -68,28 +68,30 @@
 
     /*Event*/
     Menubar.prototype.handle = function (json) {
-        this.$menu.on(
+        var $this=this;
+        $("body").on(
             json.event,
             json.selecter,/*ns-menu-a*/
             json.data,
             function (e) {
-                var transtrigger=$(".ns-menu-trans-trigger",$(this).parent()),
-                    transid=$(this).parent().attr("transid");
-                    this.menuContext = $(this).parent();
-                this.menuTrans=false;
+                var $menu=$(this).parents(".ns-menu");
 
-                /*transform*/
-                if(transtrigger.css("display")!="none"){
-                    this.menuContext =$(transid);
-                    this.menuTrans=true;
+                $this.$trans=$("#"+$menu.attr("transid"));
+                $this.$item = $(this).parent();
+                $this.isTrans=$(".ns-menu-trans-trigger",$menu).css("display")!="none"?true:false;
+
+                if($this.isTrans&&/ns-menu/ig.test($this.$trans.attr("class"))){
+                    $this.$item=$this.$trans;
+                    $this.$trans.show();
+                }else{
+                    $this.$trans.hide();
                 }
 
-                var $currMenu = $(this).parent();
-                this.menuContext.siblings().removeClass("ns-menu-open");
+                $this.$item.siblings().removeClass("ns-menu-open");
 
-                $(".ns-menu-open", $currMenu.siblings()).removeClass("ns-menu-open");
+                $(".ns-menu-open", $this.$item.siblings()).removeClass("ns-menu-open");
 
-                json.back.apply(this);
+                json.back.apply($this);
                 e.stopPropagation();
                 return false;
             }
@@ -105,17 +107,33 @@
         }
     };
     Menubar.prototype.handlefuntrans=function(){
-        console.log("handlefuntrans")
+        console.log("handlefuntrans");
+        var $this =this,
+            $item = this.$item,
+            $a = $item.children(".ns-menu-a"),
+            $main = $item.children(".ns-menu-main"),
+            $arrow = $(".ns-icon", $a),
+            dir = "left",
+            isItem = /ns-menu-item/ig.test($item.attr("class"));
+
+        console.log($item)
+
+        if (/ns-menu-open/ig.test($item.attr("class"))) {
+            $item.removeClass("ns-menu-open")
+                .find(".ns-menu-open")
+                .removeClass("ns-menu-open");
+        } else {
+            $item.addClass("ns-menu-open");
+        }
 
     };
     Menubar.prototype.handlefun=function(){
-        console.log("handlefun")
-
-        var context = this.menuContext,
-            $a = context.children(".ns-menu-a"),
-            $main = $a.next(".ns-menu-main"),
+        console.log("handlefun");
+        var $this =this,
+            $item = this.$item,
+            $a = $item.children(".ns-menu-a"),
+            $main = $item.children(".ns-menu-main"),
             $arrow = $(".ns-icon", $a),
-            $item = $main.parent(),
             dir = "left",
             isItem = /ns-menu-item/ig.test($item.attr("class"));
 

@@ -16,15 +16,15 @@
     overflow: hidden;
     > zoom : 1;
 }
-.ns-menu .ns-menu-items {
+.ns-menu-items {
     position:relative;
     width: 100%;
 }
-.ns-menu .ns-menu-item{
+.ns-menu-item{
     position:relative;
     width: 100%;
 }
-.ns-menu .ns-menu-main {
+.ns-menu-main {
     display: none;
     position: absolute;
     float:left;
@@ -34,17 +34,15 @@
     border: 1px solid #333;
     z-index: 10000;
 }
-.ns-menu .ns-menu-one {
+.ns-menu-one {
     float: left;
 }
-
-.ns-menu .ns-menu-bar {
+.ns-menu-bar {
     display: none;
     color: white;
     font-weight: bolder;
 }
-
-.ns-menu .ns-menu-a {
+.ns-menu-a {
     display: block;
     padding: 1em 1.2em;
     color: #c0c0c0;
@@ -61,11 +59,14 @@
     top:0;
     left:0;
     display:none;
+    width:150px;
     border:1px solid red;
-    width:100px;
     background-color:white;
-    height:100px;
 }
+.ns-menu-trans .ns-menu-main{
+    position:static;
+}
+.ns-menu-trans .ns-menu-items{}
 
 /*State*/
 .ns-menu-scroll {
@@ -82,6 +83,8 @@
 
 .ns-menu-open > .ns-menu-main {
     display: block;
+    float:none;
+    width:100%;
 }
 
 /*Theme*/
