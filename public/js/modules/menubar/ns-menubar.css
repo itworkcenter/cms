@@ -57,14 +57,27 @@
 .ns-menu-trans{
     position:absolute;
     top:0;
-    left:0;
+    width:100%;
+    /*bottom:0;*/
     display:none;
-    width:150px;
-    border:1px solid red;
+    background-image:url("../images/bg-cover.png");
     background-color:white;
+}
+.ns-menu-trans-bar{
+    display:block;
+    text-align:right;
+    height:40px;
+    background-color:#333;
+    color:white;
+}
+.ns-menu-trans >.ns-menu-main{
+    /*width:80%!important;
+    min-width:80%!important;*/
 }
 .ns-menu-trans .ns-menu-main{
     position:static;
+    width:100%;
+    min-width:100%;
 }
 .ns-menu-trans .ns-menu-items{}
 

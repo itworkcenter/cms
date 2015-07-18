@@ -74,7 +74,12 @@
             }
         );
 
-        $(window).resize(function(){});
+        $(window).resize(function(){
+            /*add transform trigger*/
+            if($(".ns-nav-bar").css("display")=="none"){
+                $(".ns-nav-bar-open").removeClass("ns-nav-bar-open");
+            }
+        });
 
         $(window).scroll(function(){
 

@@ -62,6 +62,7 @@
                 .attr("class",$menu.attr("class"))
                 .addClass("ns-menu-trans")
                 .attr("id","trans"+i)
+                /*.append("<a class='ns-menu-a ns-menu-trans-bar'>Back</a>")*/
                 .append($menu.children(".ns-menu-main").clone());
         }
     };
@@ -87,6 +88,10 @@
                     $this.$trans.hide();
                 }
 
+                if(/ns-menu-trans-bar/ig.test($(this).attr("class"))){
+                    $this.$trans.hide();
+                }
+
                 $this.$item.siblings().removeClass("ns-menu-open");
 
                 $(".ns-menu-open", $this.$item.siblings()).removeClass("ns-menu-open");
@@ -107,7 +112,6 @@
         }
     };
     Menubar.prototype.handlefuntrans=function(){
-        console.log("handlefuntrans");
         var $this =this,
             $item = this.$item,
             $a = $item.children(".ns-menu-a"),
@@ -115,8 +119,6 @@
             $arrow = $(".ns-icon", $a),
             dir = "left",
             isItem = /ns-menu-item/ig.test($item.attr("class"));
-
-        console.log($item)
 
         if (/ns-menu-open/ig.test($item.attr("class"))) {
             $item.removeClass("ns-menu-open")
@@ -128,7 +130,6 @@
 
     };
     Menubar.prototype.handlefun=function(){
-        console.log("handlefun");
         var $this =this,
             $item = this.$item,
             $a = $item.children(".ns-menu-a"),
