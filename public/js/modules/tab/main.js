@@ -1,3 +1,3 @@
-define(["./ns-tab","css!./ns-tab.css"],function(Menubar){
-    return Menubar;
+define(["./ns-tab","css!./ns-tab.css"],function(Tab){
+    return Tab;
 });

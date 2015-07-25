@@ -1,9 +1,9 @@
 /**
- * Jnose: tab.js v1.0
+ * Jnose is dom lib,UI plugin,Mobile,AMD
  * Auther: Carl.Y.Liu
  * URL: http://jnose.com
  */
-+(function ($) {
++(function (window, undefined ) {
     'use strict';
 
     var Obj = function (opts) {
@@ -183,4 +183,4 @@
         // Browser globals
         window.Tab = Obj;
     }
-}(jQuery));
+}(window));

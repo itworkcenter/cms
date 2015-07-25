@@ -192,12 +192,18 @@
     Bootstrap also gives you the ability to easily create responsive designs
 
 </div>
+<div class="nav-main nav-theme-back">
+    <a></a>
+    <div class="menu-main menu-theme-back">
+        <a></a>
+    </div>
+</div>
 </body>
 </html>
 <script>
     require(["jquery",
                 "main",
-                "../../modules/menubar/main"],
+                "../../modules/menu/main"],
             function ($, Navbar, Menubar) {
                 new Navbar();
                 new Menubar({
@@ -207,4 +213,9 @@
                     }
                 });
             });
+
+    $("#nav").nav({data:[],theme:"nav-blue"},function(){
+
+        $(".nav-item",this).menu({data:[],theme:"auto"});
+    })
 </script>
