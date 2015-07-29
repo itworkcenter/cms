@@ -19,7 +19,7 @@
 .ns-tab-active{
     background-color:#028433;
 }
-.ns-tab-cont{
+.ns-tab-cont ,.ns-tab-panel{
     display:none;
     border-color:darkgray;
     border-left:1px solid;

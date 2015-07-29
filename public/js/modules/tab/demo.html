@@ -44,14 +44,13 @@
 
 <div class="container">
     <section>
-
-        <div class="ns-tab">
-            <ul class="ns-tab-head">
-                <li class="ns-tab-item ns-tab-active">Tab1</li>
-                <li class="ns-tab-item">Tab2</li>
-                <li class="ns-tab-item">Tab3</li>
-            </ul>
-            <div class="ns-tab-cont">
+        <ul class="ns-tab-head">
+            <li class="ns-tab-item ns-tab-active">Tab1</li>
+            <li class="ns-tab-item">Tab2</li>
+            <li class="ns-tab-item">Tab3</li>
+        </ul>
+        <div class="ns-nav-cont">
+            <div class="ns-tab-panel">
 
                 Web building faster
 
@@ -59,13 +58,13 @@
 
 
             </div>
-            <div class="ns-tab-cont">
+            <div class="ns-tab-panel">
                 Responsive Web Design
 
                 Responsive web design is the practice of building a website suitable to work on every device and every screen size, no matter how large or small, mobile or desktop. Responsive web design is focused around providing an intuitive and gratifying experience for everyone. Desktop computer and cell phone users alike all benefit from responsive websites.
 
             </div>
-            <div class="ns-tab-cont">
+            <div class="ns-tab-panel">
 
                 Web UI Widgets
 
@@ -73,7 +72,6 @@
 
             </div>
         </div>
-
     </section>
 </div>
 </body>
@@ -81,6 +79,6 @@
 <script>
     require(["jquery","main"],function($,Tab){
         Tab();
-    });
 
+    });
 </script>
