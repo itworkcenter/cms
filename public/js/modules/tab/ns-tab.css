@@ -3,30 +3,37 @@
 /*Base*/
 .ns-tab {
     /*position: relative;*/
+    border-bottom: 1px solid #DDD;
 }
-.ns-tab-head{}
 .ns-tab-item{
     float:left;
-    padding:10px 20px;
-    margin:0 2px;
-    border-color:#333;
-    border-top:1px solid;
-    border-left:1px solid;
-    border-right:1px solid;
-    border-top-right-radius:3px;
-    border-top-left-radius:3px;
+    margin-bottom: -1px;
+    padding: 10px 15px;
+    color: #555;
+    cursor: default;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
 }
 .ns-tab-active{
-    background-color:#028433;
+    background-color: #FFF;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #DDD #DDD transparent;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
 }
-.ns-tab-cont ,.ns-tab-panel{
+.ns-tab-cont{}
+.ns-tab-panel{
     display:none;
-    border-color:darkgray;
-    border-left:1px solid;
-    border-right:1px solid;
-    border-top:1px solid;
-    border-bottom:1px solid;
+    visibility:hidden;
     padding:10px;
+}
+.ns-tab-p-active{
+    display:block;
+    visibility:visible;
 }
 .ns-tab:after,.ns-tab-head:after{
     height: 0;
