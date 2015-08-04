@@ -1,0 +1,230 @@
+/*Browser support IE7+*/
+
+/*Base*/
+.ns-tab {
+    /*position: relative;*/
+    border-bottom: 1px solid #DDD;
+}
+.ns-tab-item{
+    float:left;
+    margin-bottom: -1px;
+    padding: 10px 15px;
+    color: #555;
+    cursor: default;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.ns-tab-active{
+    background-color: #FFF;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #DDD #DDD transparent;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+}
+.ns-tab-cont{}
+.ns-tab-panel{
+    display:none;
+    visibility:hidden;
+    padding:10px;
+}
+.ns-tab-p-active{
+    display:block;
+    visibility:visible;
+}
+.ns-tab:after,.ns-tab-head:after{
+    height: 0;
+    content: "after";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    font-size: 0;
+    overflow: hidden;
+    > zoom : 1;
+}
+.ns-menu-items {
+    position:relative;
+    width: 100%;
+}
+.ns-menu-item{
+    position:relative;
+    width: 100%;
+}
+.ns-menu-main {
+    display: none;
+    position: absolute;
+    float:left;
+    min-width:200px;
+    max-width:300px;
+    background-color: #fff;
+    border: 1px solid #333;
+    z-index: 10000;
+}
+.ns-menu-one {
+    float: left;
+}
+.ns-menu-bar {
+    display: none;
+    color: white;
+    font-weight: bolder;
+}
+.ns-menu-a {
+    display: block;
+    padding: 1em 1.2em;
+    color: #c0c0c0;
+}
+/*Transform to mobile*/
+.ns-menu-trans-trigger{
+    display:none;
+    height:0;
+    width:0;
+    overflow:hidden;
+}
+.ns-menu-trans{
+    position:absolute;
+    top:0;
+    width:100%;
+    /*bottom:0;*/
+    display:none;
+    background-image:url("../images/bg-cover.png");
+    background-color:white;
+}
+.ns-menu-trans-bar{
+    display:block;
+    text-align:right;
+    height:40px;
+    background-color:#333;
+    color:white;
+}
+.ns-menu-trans >.ns-menu-main{
+    /*width:80%!important;
+    min-width:80%!important;*/
+}
+.ns-menu-trans .ns-menu-main{
+    position:static;
+    width:100%;
+    min-width:100%;
+}
+.ns-menu-trans .ns-menu-items{}
+
+/*State*/
+.ns-menu-scroll {
+}
+
+.ns-menu-open {
+    background-color: #999;
+}
+
+.ns-menu-open > .ns-menu-a,
+.ns-menu-open > .ns-menu-a *{
+    color: #333!important;
+}
+
+.ns-menu-open > .ns-menu-main {
+    display: block;
+    float:none;
+    width:100%;
+}
+
+/*Theme*/
+/*Theme-white*/
+.ns-menu-white .ns-menu-main {
+    background-color: #f3f3f3;
+    border-color: rgba(146, 152, 164, 0.8);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.ns-menu-white .ns-menu-a {
+    color: #333;
+    font-weight:bold;
+}
+
+.ns-menu-white .ns-menu-item .ns-menu-a:hover,
+.ns-menu-white .ns-menu-item .ns-menu-a:focus {
+    background-color:#e6e6e6;
+}
+
+.ns-menu-white .ns-menu-open {
+    background-color: #e6e6e6;
+}
+
+.ns-menu-white .ns-menu-open>.ns-menu-a {
+    color: #333;
+}
+
+.ns-menu-white .ns-menu-open>.ns-menu-a:hover {
+    background-color: #e6e6e6;
+}
+
+/*Theme-black*/
+.ns-menu-black, .ns-menu-black .ns-menu-main {
+    background-color: #666;
+}
+
+.ns-menu-black .ns-menu-item .ns-menu-a {
+    color: #999;
+}
+
+.ns-menu-black .ns-menu-item .ns-menu-a:hover,
+.ns-menu-black .ns-menu-item .ns-menu-a:focus {
+    background-color: #333;
+}
+
+.ns-menu-black .ns-menu-open {
+    background-color: #1F8DD6;
+}
+
+.ns-menu-black .ns-menu-open .ns-menu-a {
+    color: #fff;
+}
+
+.ns-menu-black .ns-menu-open .ns-menu-a:hover {
+    background-color: #1F8DD6;
+}
+
+
+/*Size*/
+.ns-nav-s,
+.ns-nav-s .ns-nav-one,
+.ns-nav-s .ns-nav-one .ns-nav-item,
+.ns-nav-s .ns-nav-one .ns-nav-item .ns-nav-a {
+}
+
+.ns-nav-m,
+.ns-nav-m .ns-nav-one,
+.ns-nav-m .ns-nav-one .ns-nav-item,
+.ns-nav-m .ns-nav-one .ns-nav-item .ns-nav-a {
+}
+
+.ns-nav-l {
+}
+
+.ns-nav-xl {
+}
+
+.ns-nav-xxl {
+}
+
+.ns-nav-xxxl {
+}
+
+/*Resize*/
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 768px) {
+    .ns-menu-trans-trigger{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 320px) and (max-width: 639px) {
+}

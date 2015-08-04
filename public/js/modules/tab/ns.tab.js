@@ -38,41 +38,7 @@
 
     };
 
-    /*Event*/
-    /*Get Property*/
-    NS.fn.props = function ($el) {
-        var rslts = {};
-        this.ext(rslts, $el.offset());
-        rslts.width = $el.width();
-        rslts.height = $el.height();
-        rslts.right = rslts.left + rslts.width;
-        rslts.bottom = rslts.top + rslts.height;
-        rslts.max = $(window).width();
-        return rslts;
-    };
-    /*Extend Object*/
-    NS.fn.ext = function (o, s) {
-        if (o && s) {
-            for (var i in s) {
-                if (typeof s[i] === "object") {
-                    if (!(typeof o[i] === "object")) {
-                        o[i] = {}
-                    }
-                    this.ext(o[i], s[i]);
-                } else if (typeof s[i] === "array") {
-                    if (!(typeof o[i] === "array")) {
-                        o[i] = [];
-                    }
-                    this.ext(o[i], s[i]);
-                } else {
-                    o[i] = s[i];
-                }
-            }
-        }
-        return o;
-    };
     NS.fn.init.prototype = NS.fn;
-
 
     // TAB PLUGIN DEFINITION
     // =====================
