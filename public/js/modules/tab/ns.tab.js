@@ -20,6 +20,8 @@
         this.$el=el;
     };
 
+    NS.fn.init.prototype = NS.fn;
+
     NS.fn.show = function () {
 
         var ths = this,
@@ -38,7 +40,7 @@
 
     };
 
-    NS.fn.init.prototype = NS.fn;
+
 
     // TAB PLUGIN DEFINITION
     // =====================

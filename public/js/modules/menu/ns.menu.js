@@ -1,38 +1,38 @@
 /**
- * Created by cl8m on 7/11/2015.
+ * Jnose: menu.js v1.0
+ * Auther: Carl.Y.Liu
+ * URL: http://jnose.com
  */
 ;(function () {
     'use strict';
-    if (typeof define === 'function' && define.amd) {
-        // AMD (Register as an anonymous module)
-        define(['jquery'], function () {
-            return Menubar;
-        });
-    } else if (typeof exports === 'object') {
-        // Node/CommonJS
-        module.exports = Menubar;
-    } else {
-        // Browser globals
-        window.Menubar = Menubar;
-    }
 
+    var NS = function (el) {
+        return new NS.fn.init(el);
+    };
 
-    function Menubar(opts) {
-        var $this = this;
-        this.defs = {
-            handles: {
-                event: "click",
-                data: "",
-                selecter: ".ns-menu-a",
-                back: ""
-            },
-            container: ".ns-menu"
-        };
-        opts && this.ext(this.defs, opts);
-        opts && this.ext(this, this.defs);
+    NS.VERSION = "1.0";
+    NS.TRANSITION_DURATION = 150;
+    NS.DEFS={
+        container: ".ns-menu",
+        selected:""
+    };
 
-        var $menu = this.$menu = $(this.defs.container),
-            $hdls = this.handles = this.defs.handles;
+    NS.fn = NS.prototype;
+
+    /*Initialize*/
+    NS.fn.init = function (opts) {
+
+        var ths =this;
+
+        opts && $.extend(NS.DEFS, opts);
+        ths.DEFS=NS.DEFS;
+
+        ths.$item =ths.DEFS.selected;
+        ths.$main = ths.$item.children(".ns-menu-main");
+        ths.$icon = ths.$item.children("a .ns-icon");
+        ths.$menu = ths.$item.closest(".ns-menu");
+        
+        /*this.events();
 
         this.handle({
             event: $hdls.event,
@@ -45,13 +45,51 @@
                     $this.handlefun.apply(this);
                 }
             }
-        });
+        });*/
 
         this.transform();
-    }
+    };
+
+    NS.fn.init.prototype = NS.fn;
+
+    NS.fn.isMobile = function(){
+
+    };
+
+    NS.fn.handler=function(){
+
+        var ths=this;
+
+        ths.$trans=$("#"+ths.$menu.attr("transid"));
+        ths.isTrans=$(".ns-menu-trans-trigger",ths.$menu).css("display")!="none"?true:false;
+
+        console.log(ths.$item);
+
+        if(ths.isTrans&&/ns-menu/ig.test(ths.$trans.attr("class"))){
+            ths.$item=ths.$trans;
+            ths.$trans.show();
+        }else{
+            ths.$trans.hide();
+        }
+
+        if(/ns-menu-trans-bar/ig.test($(this).attr("class"))){
+            ths.$trans.hide();
+        }
+
+        ths.$item.siblings().removeClass("ns-menu-open");
+
+        $(".ns-menu-open", ths.$item.siblings()).removeClass("ns-menu-open");
+
+        return false;
+    };
+
+    NS.fn.clear=function(){
+        $(".ns-menu-open").removeClass("ns-menu-open");
+    };
 
     /*Transform to mobile*/
-    Menubar.prototype.transform=function(){
+    NS.fn.transform=function(){
+        console.log(this.$menu)
         this.$menu.each(function(i){
             $(this).attr("transid","trans"+i).prepend("<div class='ns-menu-trans-trigger'></div>");
             define($(this),i);
@@ -68,7 +106,7 @@
     };
 
     /*Event*/
-    Menubar.prototype.handle = function (json) {
+    NS.fn.events = function (json) {
         var $this=this;
         $("body").on(
             json.event,
@@ -111,7 +149,7 @@
             $(".ns-menu-open").removeClass("ns-menu-open");
         }
     };
-    Menubar.prototype.handlefuntrans=function(){
+    NS.fn.handlefuntrans=function(){
         var $this =this,
             $item = this.$item,
             $a = $item.children(".ns-menu-a"),
@@ -129,7 +167,7 @@
         }
 
     };
-    Menubar.prototype.handlefun=function(){
+    NS.fn.handlefun=function(){
         var $this =this,
             $item = this.$item,
             $a = $item.children(".ns-menu-a"),
@@ -178,7 +216,7 @@
 
     };
     /*Get Property*/
-    Menubar.prototype.props = function ($obj) {
+    NS.fn.props = function ($obj) {
         var rslts = {};
         this.ext(rslts, $obj.offset());
         rslts.width = $obj.width();
@@ -189,7 +227,7 @@
         return rslts;
     };
     /*Extend Object*/
-    Menubar.prototype.ext = function (o, s) {
+    NS.fn.ext = function (o, s) {
         if (o && s) {
             for (var i in s) {
                 if (typeof s[i] === "object") {
@@ -209,4 +247,57 @@
         }
         return o;
     };
+
+    // TAB PLUGIN DEFINITION
+    // =====================
+
+    function Plugin(option) {
+
+        return this.each(function () {
+            var $this = $(this);
+            var data  = $this.data('ns.tab');
+
+            if (!data) $this.data('ns.tab', (data = NS({selected:$(this)})));
+
+            if (typeof option == 'string') data[option]()
+        });
+    }
+
+    var old = $.fn.menu;
+
+    $.fn.menu             = Plugin;
+    $.fn.menu.Constructor = NS.init;
+
+
+    // TAB NO CONFLICT
+    // ===============
+
+    $.fn.menu.noConflict = function () {
+        $.fn.menu = old;
+        return this
+    };
+
+
+    var clickHandler = function (e) {
+        e.preventDefault();
+        Plugin.call($(this), 'handler');
+    };
+
+    /*Event Driven*/
+    $(document)
+        .on('click.ns.menu', '.ns-menu-item,.ns-menu', clickHandler);
+
+
+    if (typeof define === 'function' && define.amd) {
+        // AMD (Register as an anonymous module)
+        define(['jquery'], function () {
+            return NS;
+        });
+    } else if (typeof exports === 'object') {
+        // Node/CommonJS
+        module.exports = NS;
+    } else {
+        // Browser globals
+        window.Tab = NS;
+    }
 }());

@@ -20,86 +20,59 @@
 
     NS.fn = NS.prototype;
 
+
     /*Initialize*/
     NS.fn.init = function (opts) {
-
-        var ths=this;
-
+        var ths =this;
         opts && $.extend(NS.DEFS, opts);
         ths.DEFS=NS.DEFS;
 
-        var $nav = ths.$nav = $(ths.DEFS.container);
+        ths.$item =ths.DEFS.selectedItem;
+        ths.$main = ths.$item.parent();
+        ths.$icon = ths.$item.children("a .ns-icon");
+        ths.$nav = ths.$item.closest(".ns-nav");
+        ths.dir = "left";
 
-        /*this.handle({
-            event: $hdls.event,
-            selecter: $hdls.selecter,
-            data: $hdls.data,
-            back: function () {
-                var $a = $(this),
-                    $item = $a.parent(),
-                    $main = $a.next(".ns-nav-main"),
-                    $arrow = $(".ns-icon", this),
-                    dir = "left";
 
-                if (/ns-nav-bar-open/ig.test($item.attr("class"))) {
-                    $item.removeClass("ns-nav-bar-open")
-                        .find(".ns-nav-bar-open")
-                        .removeClass("ns-nav-bar-open");
-                } else {
-                    $item.addClass("ns-nav-bar-open");
-                }
+        ths.events();
+    };
 
-            }
-        });*/
+    NS.fn.init.prototype = NS.fn;
+
+    NS.fn.isMobile=function(){
+
+        if($(".ns-nav-bar").css("display")=="none"){
+            this.$main.removeClass("ns-nav-bar-open");
+            return false;
+        }else{
+            this.$main.addClass("ns-nav-bar-open");
+            return true;
+        }
     };
 
     NS.fn.show=function(){
+        console.log("show")
+        if(this.isMobile()){
+            if(this.$main.hasClass("ns-nav-bar-open")){
+                this.$main.removeClass("ns-nav-bar-open");
+            }else{
+                this.$main.addClass("ns-nav-bar-open");
+            }
+        }else{
 
-        var ths =this,
-            $sledItem = ths.DEFS.selectedItem;
-
-        var $a = $(this),
-            $item = $a.parent(),
-            $main = $a.next(".ns-nav-main"),
-            $arrow = $(".ns-icon", this),
-            dir = "left";
-
-        if (/ns-nav-bar-open/ig.test($item.attr("class"))) {
-            $item.removeClass("ns-nav-bar-open")
-                .find(".ns-nav-bar-open")
-                .removeClass("ns-nav-bar-open");
-        } else {
-            $item.addClass("ns-nav-bar-open");
         }
-
-
     };
 
+    NS.fn.events=function(){
 
-    NS.fn.handle=function(json){
-        var $nav = this.$nav,
+        var ths =this,
+            $nav = ths.$nav,
             pos=$nav.offset();
-
-        this.$nav.on(
-            json.event,
-            json.selecter,
-            json.data,
-            function (e) {
-
-                var $currBar = $(this).parent();
-
-                $currBar.siblings().removeClass("ns-nav-bar-open");
-                //clearopen($currBar.siblings());
-
-                json.back.apply(this, e);
-            }
-        );
 
         $(window).resize(function(){
             /*add transform trigger*/
-            if($(".ns-nav-bar").css("display")=="none"){
-                $(".ns-nav-bar-open").removeClass("ns-nav-bar-open");
-            }
+            ths.isMobile();
+
         });
 
         $(window).scroll(function(){
@@ -113,17 +86,16 @@
             }
         }).scroll();
 
-        /*clear open*/
-        function clearopen(scope){
-            $("[class*='-open']",scope).each(function(){
-                var curr = $(this),
-                    currCls=curr.attr("class").replace(/-open/ig,"");
-                curr.attr("class",currCls);
-            });
-        }
     };
 
-    NS.fn.init.prototype = NS.fn;
+    /*clear open*/
+    NS.fn.clear=function(scope){
+        $("[class*='-open']",scope).each(function(){
+            var curr = $(this),
+                currCls=curr.attr("class").replace(/-open/ig,"");
+            curr.attr("class",currCls);
+        });
+    };
 
     // TAB PLUGIN DEFINITION
     // =====================
@@ -163,7 +135,7 @@
     };
 
     $(document)
-        .on('click.ns.nav', '.ns-nav-item', clickHandler);
+        .on('click.ns.nav', '.ns-nav-item,.ns-nav-bar', clickHandler);
 
 
     if (typeof define === 'function' && define.amd) {

@@ -58,7 +58,9 @@
     <div class="ns-main">
         <div class="ns-nav-one ns-nav-logo"><a class="ns-nav-a" href="javascript:;">JNOSE</a></div>
         <div class="ns-nav-one ns-nav-list">
-            <div class="ns-nav-bar"><a class="ns-nav-a" href="javascript:;">Menu<i class="ns-icon ns-icon-down"></i></a></div>
+            <div class="ns-nav-bar">
+                <a class="ns-nav-a" href="javascript:;">Menu<i class="ns-icon ns-icon-down"></i></a>
+            </div>
             <div class="ns-nav-main">
                 <ul class="ns-nav-items">
                     <li class="ns-nav-item"><a class="ns-nav-a" href="javascript:;">Home</a></li>
@@ -204,13 +206,8 @@
     require(["jquery",
                 "main",
                 "../../modules/menu/main"],
-            function ($, Navbar, Menubar) {
-                console.log($)
+            function ($) {
 
-                $("#nav").nav({data:[],theme:"nav-blue"},function(){
-
-                    $(".nav-item",this).menu({data:[],theme:"auto"});
-                })
             });
 
 
